@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#E5E7EB"/>
+  <rect x="100" y="100" width="600" height="400" fill="#9CA3AF"/>
+  <path d="M200 200 L400 400 L600 200" stroke="#4B5563" stroke-width="4"/>
+  <circle cx="200" cy="200" r="10" fill="#4B5563"/>
+  <circle cx="400" cy="400" r="10" fill="#4B5563"/>
+  <circle cx="600" cy="200" r="10" fill="#4B5563"/>
+  <text x="400" y="500" text-anchor="middle" fill="#4B5563" font-size="24">Attention Patterns</text>
+</svg> 
