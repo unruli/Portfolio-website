@@ -46,7 +46,7 @@ export default function Publications() {
   const [selectedYear, setSelectedYear] = React.useState('all')
   const [expandedAbstract, setExpandedAbstract] = React.useState<string | null>(null)
 
-  const years = ['all', ...new Set(publications.map(pub => pub.year))].sort().reverse()
+  const years = ['all', ...Array.from(new Set(publications.map(pub => pub.year)))].sort().reverse()
 
   const filteredPublications = publications.filter(pub => {
     if (selectedType !== 'all' && pub.type !== selectedType) return false
