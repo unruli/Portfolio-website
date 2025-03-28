@@ -48,17 +48,17 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="space-y-8"
           >
-            <div className="relative w-32 h-32 mx-auto mb-8">
+            <div className="relative w-64 h-64 mx-auto mb-8">
               <Image
-                src="/profile-placeholder.jpg"
-                alt="Profile"
+                src="/profile.jpg"
+                alt="Chibuzor Okocha"
                 fill
                 className="rounded-full object-cover"
                 priority
               />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white">
-              Your Name
+              Chibuzor Okocha
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               PhD Student & Research Assistant in AI, NLP, and Computing Education

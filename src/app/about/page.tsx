@@ -6,22 +6,22 @@ import { AcademicCapIcon, LightBulbIcon, DocumentTextIcon } from '@heroicons/rea
 
 const education = [
   {
-    degree: 'PhD in Computer Science',
-    institution: 'Your University',
-    year: '2022-Present',
+    degree: 'PhD in Engineering Education (Concentration in AI)',
+    institution: 'University of Florida',
+    year: '2023-Present',
     description: 'Focusing on AI, NLP, and Computing Education',
   },
   {
     degree: 'Master of Science',
-    institution: 'Previous University',
-    year: '2020-2022',
+    institution: 'University of Florida',
+    year: '2023-2025',
     description: 'Specialized in Machine Learning and Natural Language Processing',
   },
   {
-    degree: 'Bachelor of Science',
-    institution: 'Undergraduate University',
+    degree: 'Bachelor of Engineering',
+    institution: 'University of Benin, Nigeria',
     year: '2016-2020',
-    description: 'Computer Science with focus on AI and Software Engineering',
+    description: 'Computer Engineering with focus on AI and Software Engineering',
   },
 ]
 

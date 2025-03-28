@@ -37,7 +37,7 @@ const galleryItems = [
   // Add more gallery items as needed
 ]
 
-const categories = ['all', ...new Set(galleryItems.map(item => item.category))]
+const categories = ['all', ...Array.from(new Set(galleryItems.map(item => item.category)))]
 
 export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = React.useState('all')
