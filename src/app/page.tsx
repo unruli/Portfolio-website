@@ -27,8 +27,8 @@ const researchInterests = [
     icon: AcademicCapIcon,
   },
   {
-    title: 'Research Innovation',
-    description: 'Developing novel approaches to complex problems',
+    title: 'Audio and Speech Technology',
+    description: 'Developing advanced speech recognition and audio processing systems',
     icon: LightBulbIcon,
   },
 ]
