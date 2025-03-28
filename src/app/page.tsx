@@ -66,6 +66,8 @@ export default function Home() {
             <div className="flex justify-center space-x-4">
               <a
                 href="/cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Download CV
