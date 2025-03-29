@@ -52,6 +52,16 @@ const publications = [
     pdf: 'https://doi.org/10.1109/FIE61694.2024.10893074',
     status: 'WIP',
   },
+  {
+    id: 5,
+    title: 'Microelectronics Research and Global Competencies: Unpacking Research Abroad Experiences of Engineering Students',
+    authors: 'Chibuzor J. Okocha, Gloria J. Kim, Jae Wan Choi, Yong-Kyu Yoon',
+    venue: 'ASEE Annual Conference & Exposition',
+    year: '2024',
+    type: 'conference',
+    abstract: 'Global competencies are essential for engineering students in today\'s globalized world. This work investigates this aspect of an International Research Experience for Students (IRES) program funded by the National Science Foundation (NSF). The NSF IRES: Interdisciplinary Research in Korea on Applied Smart Systems (IRiKA) recruited both undergraduate and graduate students with diverse backgrounds from four public and private US universities. Due to the constraints of the grant, only US citizens and permanent residents were eligible to apply. Over the duration of the grant, three cohorts were deployed. Due to the pandemic, the program did not run in 2020 and 2022. In all, 18 participants engaged in an 8-week research internship as part of the IRiKA program. This study focuses on the experience of the 2023 cohort - specifically, a subset of the 2023 cohort that worked on microelectronics device projects. This study employed a qualitative methods approach anchored in the PISA 2018 Global Competence theoretical framework. By analyzing qualitative data from weekly blog post reflections and student interviews, this work aims to unpack the complex ways global competencies are cultivated among undergraduate and graduate engineering students with varying degrees of prior research experience. The findings of this research are expected to inform future engineering education practices, providing valuable insights for educators, policymakers, and institutions aiming to enhance the global competencies of their students through international research collaborations.',
+    pdf: 'https://doi.org/10.18260/1-2--47777',
+  },
   // Add more publications as needed
 ]
 
