@@ -32,6 +32,15 @@ const publications = [
     abstract: 'Recent multimodal "voice-native" large language models (LLMs) have demonstrated remarkable conversational capabilities but remain limited to a few widely spoken languages, leaving their applicability in low-resource settings largely unexplored. Given LLMs\' "superhuman" performance on multiple medical benchmarks, voice-based LLMs could enhance access to accurate and personalized health information by enabling more natural interactions, catering to patients in their preferred language, particularly in regions facing severe clinician shortages. This study compares speech-based LLMs with traditional ASR models, evaluating their transcription performance on African languages and English accents. Our results reveal significant disparities in language support and performance, highlighting key limitations in current speech-based LLMs and providing insights into optimal baselines for building more inclusive, multilingual, speech-driven healthcare AI systems',
     status: 'Under Review',
   },
+  {
+    id: 3,
+    title: 'We lost 2 decades: a large-scale multi-country study on healthcare documentation speeds in LMICs',
+    authors: 'Tobi Olatunji, Chinemelu Aka, Tassallah Abdullahi, Chibuzor Okocha, Naome A. Etori, Gloria A. Katuka, and Lukman E. Ismaila',
+    venue: 'ACM CHI Workshop on Envisioning the Future of Interactive Health',
+    year: '2025',
+    type: 'workshop',
+    abstract: 'Medical voice dictation and scribe services have boosted productivity in high-resource settings for decades. Yet they remain virtually absent in low-and-middle-income countries (LMICs), where healthcare systems face physician shortages and heavier patient loads but rely on outdated, paper-based workflows. While voice input is typically considered a suitable alternative that alleviates the additional cognitive burden from keyboard-based data entry, studies in high-resource settings report mixed findings on its efficiency. This study evaluates whether those findings hold true in LMIC contexts. We assessed typing and dictation speeds among over 1,000 clinicians and health workers across 15+ LMICs. Results reveal a median keyboard speed of just 21.4 words per minute (wpm), in contrast to dictation speeds that are 4–5x faster on average (median 93 wpm). This speed improvement highlights the potential of automatic speech recognition (ASR) to reduce documentation burdens, improve workflow efficiency, and transform clinician experiences, and reinforcing the need to integrate voice solutions into LMIC digital health strategies.',
+  },
   // Add more publications as needed
 ]
 
