@@ -23,15 +23,14 @@ const publications = [
     citations: 0,
   },
   {
-    title: 'Example Publication Title 2',
-    authors: 'Your Name, Co-Author 1',
-    venue: 'Journal of Artificial Intelligence Research',
-    year: '2022',
-    type: 'journal',
-    doi: 'https://doi.org/10.xxxx/xxxxx',
-    pdf: '/papers/paper2.pdf',
-    abstract: 'Another example paper showcasing your research contributions.',
-    tags: ['NLP', 'Education'],
+    id: 2,
+    title: 'Probing Multilingual and Accent robustness of Speech LLMs',
+    authors: 'Anonymous',
+    venue: 'Interspeech',
+    year: '2025',
+    type: 'conference',
+    abstract: 'Recent multimodal "voice-native" large language models (LLMs) have demonstrated remarkable conversational capabilities but remain limited to a few widely spoken languages, leaving their applicability in low-resource settings largely unexplored. Given LLMs\' "superhuman" performance on multiple medical benchmarks, voice-based LLMs could enhance access to accurate and personalized health information by enabling more natural interactions, catering to patients in their preferred language, particularly in regions facing severe clinician shortages. This study compares speech-based LLMs with traditional ASR models, evaluating their transcription performance on African languages and English accents. Our results reveal significant disparities in language support and performance, highlighting key limitations in current speech-based LLMs and providing insights into optimal baselines for building more inclusive, multilingual, speech-driven healthcare AI systems',
+    status: 'Under Review',
   },
   // Add more publications as needed
 ]
@@ -39,6 +38,7 @@ const publications = [
 const publicationTypes = [
   { id: 'all', name: 'All', icon: DocumentTextIcon },
   { id: 'conference', name: 'Conference Papers', icon: AcademicCapIcon },
+  { id: 'workshop', name: 'Workshop Papers', icon: BookOpenIcon },
   { id: 'journal', name: 'Journal Articles', icon: BookOpenIcon },
 ]
 
@@ -123,20 +123,26 @@ export default function Publications() {
                   </p>
                 </div>
                 <div className="flex space-x-2">
-                  <a
-                    href={pub.doi}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-                  >
-                    <ArrowTopRightOnSquareIcon className="h-5 w-5" />
-                  </a>
-                  <a
-                    href={pub.pdf}
-                    className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-                  >
-                    <DocumentTextIcon className="h-5 w-5" />
-                  </a>
+                  {pub.pdf && (
+                    <a
+                      href={pub.pdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+                    >
+                      <DocumentTextIcon className="h-5 w-5" />
+                    </a>
+                  )}
+                  {pub.code && (
+                    <a
+                      href={pub.code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+                    >
+                      <ArrowTopRightOnSquareIcon className="h-5 w-5" />
+                    </a>
+                  )}
                 </div>
               </div>
 
