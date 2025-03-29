@@ -73,10 +73,18 @@ export default function Home() {
                 Download CV
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:c.okocha@ufl.edu"
                 className="px-6 py-3 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               >
                 Contact Me
+              </a>
+              <a
+                href="https://github.com/unruli"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              >
+                GitHub
               </a>
             </div>
           </motion.div>
