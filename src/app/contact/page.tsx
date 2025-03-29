@@ -13,7 +13,7 @@ import {
 const socialLinks = [
   {
     name: 'Email',
-    href: 'mailto:your.email@example.com',
+    href: 'mailto:c.okocha@ufl.edu',
     icon: EnvelopeIcon,
     description: 'Send me an email',
   },
@@ -25,7 +25,7 @@ const socialLinks = [
   },
   {
     name: 'GitHub',
-    href: 'https://github.com/yourusername',
+    href: 'https://github.com/unruli',
     icon: CodeBracketIcon,
     description: 'Check out my code repositories',
   },
