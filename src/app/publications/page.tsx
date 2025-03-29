@@ -67,7 +67,7 @@ export default function Publications() {
             Publications
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A collection of my academic publications in AI, NLP, and Computing Education.
+            A collection of my academic publications in AI, NLP, and Engineering and Computing Education.
           </p>
         </motion.div>
 
