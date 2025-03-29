@@ -41,6 +41,17 @@ const publications = [
     type: 'workshop',
     abstract: 'Medical voice dictation and scribe services have boosted productivity in high-resource settings for decades. Yet they remain virtually absent in low-and-middle-income countries (LMICs), where healthcare systems face physician shortages and heavier patient loads but rely on outdated, paper-based workflows. While voice input is typically considered a suitable alternative that alleviates the additional cognitive burden from keyboard-based data entry, studies in high-resource settings report mixed findings on its efficiency. This study evaluates whether those findings hold true in LMIC contexts. We assessed typing and dictation speeds among over 1,000 clinicians and health workers across 15+ LMICs. Results reveal a median keyboard speed of just 21.4 words per minute (wpm), in contrast to dictation speeds that are 4–5x faster on average (median 93 wpm). This speed improvement highlights the potential of automatic speech recognition (ASR) to reduce documentation burdens, improve workflow efficiency, and transform clinician experiences, and reinforcing the need to integrate voice solutions into LMIC digital health strategies.',
   },
+  {
+    id: 4,
+    title: 'Navigating Unfamiliar Waters: Enhancing Intercultural Understanding and Academic Self-Efficacy Among Computer Science Students in Japan',
+    authors: 'Chibuzor J. Okocha, Jeremiah J. Blanchard, Gloria J. Kim, Mariko Adachi',
+    venue: 'IEEE Frontiers in Education Conference (FIE)',
+    year: '2024',
+    type: 'conference',
+    abstract: 'Global collaborations have expanded the importance of effective cross-cultural communication in engineering disciplines, with self-efficacy playing a crucial role in developing these skills. This work-in-progress innovative practice paper is a quantitative component of a mixed-method exploratory study investigating the experiences of fifteen computing students from the University of Florida who participated in a nine-week summer study abroad program at Kyoto University, Japan, in 2022. The research aimed to assess the enhancement of cross-cultural engineering self-efficacy and the evolution of students\' intercultural understanding. Surveys were conducted at the program\'s inception and conclusion, allowing for a detailed analysis of students\' self-perceived academic capabilities and intercultural awareness over time. Preliminary statistical analysis suggests an increase in students\' self-efficacy in cross-cultural engineering by the end of the program, highlighting the impact of the study abroad experience on broadening students\' perspectives and enhancing their adaptability in intercultural interactions.',
+    pdf: 'https://doi.org/10.1109/FIE61694.2024.10893074',
+    status: 'WIP',
+  },
   // Add more publications as needed
 ]
 
