@@ -11,15 +11,16 @@ import {
 
 const publications = [
   {
-    title: 'Example Publication Title 1',
-    authors: 'Your Name, Co-Author 1, Co-Author 2',
-    venue: 'International Conference on Machine Learning (ICML)',
-    year: '2023',
+    id: 1,
+    title: 'Afrispeech-Dialog: A Benchmark Dataset for Spontaneous English Conversations in Healthcare and Beyond',
+    authors: 'Mardhiyah Sanni, Tassallah Abdullahi, Devendra D. Kayande, Emmanuel Ayodele, Naome A. Etori, Michael S. Mollel, Moshood Yekini, Chibuzor Okocha, Lukman E. Ismaila, Folafunmi Omofoye, Boluwatife A. Adewale, Tobi Olatunji',
+    venue: 'Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL)',
+    year: '2025',
+    abstract: 'Speech technologies are transforming interactions across various sectors, from healthcare to call centers and robots, yet their performance on African-accented conversations remains underexplored. We introduce Afrispeech-Dialog, a benchmark dataset of 50 simulated medical and non-medical African-accented English conversations, designed to evaluate automatic speech recognition (ASR) and related technologies. We assess state-of-the-art (SOTA) speaker diarization and ASR systems on long-form, accented speech, comparing their performance with native accents and discover a 10%+ performance degradation. Additionally, we explore medical conversation summarization capabilities of large language models (LLMs) to demonstrate the impact of ASR errors on downstream medical summaries, providing insights into the challenges and opportunities for speech technologies in the Global South. Our work highlights the need for more inclusive datasets to advance conversational AI in low-resource settings.',
     type: 'conference',
-    doi: 'https://doi.org/10.xxxx/xxxxx',
-    pdf: '/papers/paper1.pdf',
-    abstract: 'This is a brief description of the paper and its contributions to the field.',
-    tags: ['AI', 'Machine Learning', 'NLP'],
+    pdf: 'https://doi.org/10.48550/arXiv.2502.03945',
+    code: 'https://github.com/yourusername/afrispeech-dialog',
+    citations: 0,
   },
   {
     title: 'Example Publication Title 2',
@@ -50,7 +51,6 @@ export default function Publications() {
 
   const filteredPublications = publications.filter(pub => {
     if (selectedType !== 'all' && pub.type !== selectedType) return false
-    if (selectedYear !== 'all' && pub.year !== selectedYear) return false
     return true
   })
 
@@ -155,14 +155,12 @@ export default function Publications() {
               </div>
 
               <div className="mt-4 flex flex-wrap gap-2">
-                {pub.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-2 py-1 text-sm bg-gray-100 text-gray-700 rounded-full dark:bg-gray-700 dark:text-gray-300"
-                  >
-                    {tag}
-                  </span>
-                ))}
+                <span className="px-3 py-1 text-sm bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full">
+                  {pub.type}
+                </span>
+                <span className="px-3 py-1 text-sm bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 rounded-full">
+                  {pub.year}
+                </span>
               </div>
             </motion.div>
           ))}
