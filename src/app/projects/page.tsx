@@ -43,6 +43,15 @@ const projects = [
     image: '/projects/afrispeech-tts.jpg',
     category: 'research',
   },
+  {
+    id: 5,
+    title: 'RAG Application with NVIDIA NIM',
+    description: 'Built a Retrieval-Augmented Generation (RAG) pipeline using NVIDIA\'s NIM (NeMo Inference Microservices) and LangChain, with a Streamlit UI for interaction. The system processes PDF documents, creates vector embeddings using NVIDIAEmbeddings, and enables natural language querying over the content using the meta/llama3-70b-instruct model through ChatNVIDIA.',
+    tags: ['RAG', 'NVIDIA NIM', 'LangChain', 'Streamlit', 'LLM', 'Vector Embeddings'],
+    github: 'https://github.com/unruli/Building-RAG-Agents-with-LLms',
+    image: '/projects/rag-nim.jpg',
+    category: 'research',
+  },
 ]
 
 const categories = ['all', ...Array.from(new Set(projects.map(project => project.category)))]
