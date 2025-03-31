@@ -60,10 +60,10 @@ export default function About() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h1 className="text-4xl font-bold text-white mb-4">
             About Me
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             I am a PhD student and research assistant at the University of Florida, specializing in AI, Speech Technology, NLP, and Computing Education. My research focuses on developing innovative solutions in speech technology and improving computer science education through interdisciplinary approaches.
           </p>
         </motion.div>
@@ -71,8 +71,8 @@ export default function About() {
         {/* Education Section */}
         <section className="mb-16">
           <div className="flex items-center mb-8">
-            <AcademicCapIcon className="h-8 w-8 text-blue-600 dark:text-blue-400 mr-2" />
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+            <AcademicCapIcon className="h-8 w-8 text-white mr-2" />
+            <h2 className="text-2xl font-bold text-white">
               Education
             </h2>
           </div>
@@ -105,8 +105,8 @@ export default function About() {
         {/* Experience Section */}
         <section className="mb-16">
           <div className="flex items-center mb-8">
-            <BriefcaseIcon className="h-8 w-8 text-blue-600 dark:text-blue-400 mr-2" />
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+            <BriefcaseIcon className="h-8 w-8 text-white mr-2" />
+            <h2 className="text-2xl font-bold text-white">
               Experience
             </h2>
           </div>
@@ -139,8 +139,8 @@ export default function About() {
         {/* Skills Section */}
         <section>
           <div className="flex items-center mb-8">
-            <DocumentTextIcon className="h-8 w-8 text-blue-600 dark:text-blue-400 mr-2" />
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+            <DocumentTextIcon className="h-8 w-8 text-white mr-2" />
+            <h2 className="text-2xl font-bold text-white">
               Skills & Expertise
             </h2>
           </div>

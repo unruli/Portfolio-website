@@ -57,14 +57,14 @@ export default function Home() {
                 priority
               />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white">
+            <h1 className="text-4xl md:text-6xl font-bold text-white">
               Chibuzor Okocha
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-white max-w-2xl mx-auto">
               PhD Student & Research Assistant in AI, NLP, and Computing Education
             </p>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Master of Science in Engineering Education (Expected Summer 2025) | Bachelor of Science in Computer Engineering
+            <p className="text-lg text-white max-w-2xl mx-auto">
+              Master of Science in Engineering Education (Expected Summer 2025)
             </p>
             <div className="flex justify-center space-x-4">
               <a
