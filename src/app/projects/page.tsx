@@ -52,6 +52,15 @@ const projects = [
     image: '/projects/rag-nim.jpg',
     category: 'research',
   },
+  {
+    id: 6,
+    title: 'Multi-Agent Systems with CrewAI',
+    description: 'A project exploring the design and orchestration of multi-agent systems using CrewAI and OpenAI models. Demonstrates how to coordinate autonomous agents to solve complex tasks collaboratively, with features for agent delegation, natural language communication, and external tool integration.',
+    tags: ['Multi-Agent Systems', 'CrewAI', 'OpenAI', 'LLM', 'Python', 'Agent Orchestration'],
+    github: 'https://github.com/unruli/Mutli-Agent-systems',
+    image: '/projects/crewai.jpg',
+    category: 'research',
+  },
 ]
 
 const categories = ['all', ...Array.from(new Set(projects.map(project => project.category)))]
