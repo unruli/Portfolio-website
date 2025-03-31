@@ -24,6 +24,16 @@ const projects = [
     image: '/projects/nemo-asr.jpg',
     category: 'research',
   },
+  {
+    id: 3,
+    title: 'Academic Portfolio Website',
+    description: 'A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features include dark mode support, smooth animations using Framer Motion, and a fully responsive design showcasing my research, publications, and projects.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'React'],
+    github: 'https://github.com/unruli/Portfolio-website',
+    demo: 'https://chibuzor.vercel.app/',
+    image: '/projects/portfolio.jpg',
+    category: 'web',
+  },
 ]
 
 const categories = ['all', ...Array.from(new Set(projects.map(project => project.category)))]
@@ -106,6 +116,17 @@ export default function Projects() {
                     >
                       <CodeBracketIcon className="h-5 w-5 mr-1" />
                       GitHub
+                    </Link>
+                  )}
+                  {project.demo && (
+                    <Link
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                    >
+                      <ArrowTopRightOnSquareIcon className="h-5 w-5 mr-1" />
+                      Live Demo
                     </Link>
                   )}
                 </div>
