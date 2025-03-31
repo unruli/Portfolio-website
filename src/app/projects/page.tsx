@@ -34,6 +34,15 @@ const projects = [
     image: '/projects/portfolio.jpg',
     category: 'web',
   },
+  {
+    id: 4,
+    title: 'AfriSpeech-TTS',
+    description: 'African Digital Voices: A pan-African parameter-efficient multi-accent multi-speaker text-to-speech system. Features 751 unique speakers with a balanced gender distribution (54.45% female, 44.36% male, 1.19% other). The system uses parameter-efficient approaches to achieve competitive performance in voice synthesis while using only 1.2% to 0.8% of original trainable parameters.',
+    tags: ['Text-to-Speech', 'Speech Synthesis', 'African Voices', 'Deep Learning', 'Python'],
+    github: 'https://github.com/intron-innovation/AfriSpeech-TTS',
+    image: '/projects/afrispeech-tts.jpg',
+    category: 'research',
+  },
 ]
 
 const categories = ['all', ...Array.from(new Set(projects.map(project => project.category)))]
