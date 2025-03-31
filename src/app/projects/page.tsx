@@ -15,6 +15,15 @@ const projects = [
     image: '/projects/afrispeech.jpg',
     category: 'research',
   },
+  {
+    id: 2,
+    title: 'ASR Fine-Tuning with Nvidia NeMo',
+    description: 'Built, trained, and deployed a GPU-accelerated automatic speech recognition service (ASR) tailored for Nigerian English using NVIDIA\'s Riva and NeMo frameworks. The project includes fine-tuning pre-trained models, implementing word boosting, and deploying custom ASR pipelines.',
+    tags: ['ASR', 'Deep Learning', 'NVIDIA NeMo', 'NVIDIA Riva', 'Python', 'GPU Computing'],
+    github: 'https://github.com/unruli/ASR-Fine-Tuning-with-Nvidia-NeMo',
+    image: '/projects/nemo-asr.jpg',
+    category: 'research',
+  },
 ]
 
 const categories = ['all', ...Array.from(new Set(projects.map(project => project.category)))]
