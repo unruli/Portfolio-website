@@ -11,6 +11,12 @@ import {
 
 const education = [
   {
+    degree: 'PhD in Engineering Education',
+    institution: 'University of Florida',
+    status: 'Expected Fall 2027',
+    description: 'Research focus on AI, Speech Technology, NLP, and Computing Education',
+  },
+  {
     degree: 'Master of Science in Engineering Education',
     institution: 'University of Florida',
     status: 'Expected Summer 2025',
@@ -58,7 +64,7 @@ export default function About() {
             About Me
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            I am a PhD student and research assistant at the University of Florida, specializing in AI, NLP, and Computing Education. My research focuses on developing innovative solutions in speech technology and improving computer science education.
+            I am a PhD student and research assistant at the University of Florida, specializing in AI, Speech Technology, NLP, and Computing Education. My research focuses on developing innovative solutions in speech technology and improving computer science education through interdisciplinary approaches.
           </p>
         </motion.div>
 
