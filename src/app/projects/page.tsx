@@ -8,6 +8,15 @@ import Link from 'next/link'
 const projects = [
   {
     id: 1,
+    title: 'AfriSpeech-200',
+    description: 'A comprehensive dataset of Pan-African accented speech for clinical and general domain ASR, featuring 100+ African accents totaling 196+ hours of audio. The dataset includes 2,463 unique speakers with a balanced gender distribution (57.11% female, 42.41% male, 0.48% other). This resource aims to address the gap in African-accented speech recognition and provide a benchmark for developing more inclusive speech technologies.',
+    tags: ['Speech Processing', 'ASR', 'African Accents', 'Dataset', 'Clinical Domain', 'Python'],
+    github: 'https://github.com/intron-innovation/AfriSpeech-200',
+    image: '/projects/afrispeech-200.jpg',
+    category: 'research',
+  },
+  {
+    id: 2,
     title: 'AfriSpeech-Dialog',
     description: 'A dataset of long-form African accented English conversation for evaluation diarization, ASR, and summarization. I worked on the Diarization of open and closed Diarization models on our Custom dataset.',
     tags: ['Speech Processing', 'ASR', 'Diarization', 'Python'],
@@ -16,7 +25,7 @@ const projects = [
     category: 'research',
   },
   {
-    id: 2,
+    id: 3,
     title: 'ASR Fine-Tuning with Nvidia NeMo',
     description: 'Built, trained, and deployed a GPU-accelerated automatic speech recognition service (ASR) tailored for Nigerian English using NVIDIA\'s Riva and NeMo frameworks. The project includes fine-tuning pre-trained models, implementing word boosting, and deploying custom ASR pipelines.',
     tags: ['ASR', 'Deep Learning', 'NVIDIA NeMo', 'NVIDIA Riva', 'Python', 'GPU Computing'],
@@ -25,7 +34,7 @@ const projects = [
     category: 'research',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Academic Portfolio Website',
     description: 'A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features include dark mode support, smooth animations using Framer Motion, and a fully responsive design showcasing my research, publications, and projects.',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'React'],
@@ -35,7 +44,7 @@ const projects = [
     category: 'web',
   },
   {
-    id: 4,
+    id: 5,
     title: 'AfriSpeech-TTS',
     description: 'African Digital Voices: A pan-African parameter-efficient multi-accent multi-speaker text-to-speech system. Features 751 unique speakers with a balanced gender distribution (54.45% female, 44.36% male, 1.19% other). The system uses parameter-efficient approaches to achieve competitive performance in voice synthesis while using only 1.2% to 0.8% of original trainable parameters.',
     tags: ['Text-to-Speech', 'Speech Synthesis', 'African Voices', 'Deep Learning', 'Python'],
@@ -44,7 +53,7 @@ const projects = [
     category: 'research',
   },
   {
-    id: 5,
+    id: 6,
     title: 'RAG Application with NVIDIA NIM',
     description: 'Built a Retrieval-Augmented Generation (RAG) pipeline using NVIDIA\'s NIM (NeMo Inference Microservices) and LangChain, with a Streamlit UI for interaction. The system processes PDF documents, creates vector embeddings using NVIDIAEmbeddings, and enables natural language querying over the content using the meta/llama3-70b-instruct model through ChatNVIDIA.',
     tags: ['RAG', 'NVIDIA NIM', 'LangChain', 'Streamlit', 'LLM', 'Vector Embeddings'],
@@ -53,7 +62,7 @@ const projects = [
     category: 'research',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Multi-Agent Systems with CrewAI',
     description: 'A project exploring the design and orchestration of multi-agent systems using CrewAI and OpenAI models. Demonstrates how to coordinate autonomous agents to solve complex tasks collaboratively, with features for agent delegation, natural language communication, and external tool integration.',
     tags: ['Multi-Agent Systems', 'CrewAI', 'OpenAI', 'LLM', 'Python', 'Agent Orchestration'],
