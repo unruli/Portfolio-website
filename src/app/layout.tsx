@@ -1,15 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter, Lora } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
-import { ThemeProvider } from '@/components/theme-provider'
 import Navbar from '@/components/Navbar'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-const lora = Lora({ subsets: ['latin'], variable: '--font-lora' })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Academic Portfolio | PhD Student in AI & NLP',
-  description: 'Portfolio website showcasing research, publications, and projects in AI, NLP, and Computing & Engineering Education.',
+  title: 'Chibuzor Okocha - Portfolio',
+  description: 'Academic portfolio showcasing research in AI, NLP, and Computing Education',
 }
 
 export default function RootLayout({
@@ -18,19 +16,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${lora.variable} font-sans antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
-          <main className="min-h-screen bg-white dark:bg-gray-900">
-            {children}
-          </main>
-        </ThemeProvider>
+    <html lang="en">
+      <body className={inter.className}>
+        <Navbar />
+        <main className="pt-16">
+          {children}
+        </main>
       </body>
     </html>
   )
