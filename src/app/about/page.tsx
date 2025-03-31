@@ -11,7 +11,7 @@ import {
 
 const education = [
   {
-    degree: 'PhD in Engineering Education',
+    degree: 'PhD (Student) in Engineering Education',
     institution: 'University of Florida',
     status: 'Expected Fall 2027',
     description: 'Research focus on AI, Speech Technology, NLP, and Computing Education',
@@ -20,13 +20,13 @@ const education = [
     degree: 'Master of Science in Engineering Education',
     institution: 'University of Florida',
     status: 'Expected Summer 2025',
-    description: 'Focusing on AI, NLP, and Computing Education research',
+    description: 'Focusing on AI, NLP, and Computing Education Research',
   },
   {
     degree: 'Bachelor of Science in Computer Engineering',
     institution: 'University of Florida',
-    status: 'Completed',
-    description: 'Graduated with a strong foundation in computer engineering principles',
+    status: 'Completed in 2020',
+    
   },
 ]
 
