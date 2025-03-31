@@ -13,7 +13,7 @@ const projects = [
     tags: ['Speech Processing', 'ASR', 'African Accents', 'Dataset', 'Clinical Domain', 'Python'],
     github: 'https://github.com/intron-innovation/AfriSpeech-200',
     image: '/projects/afrispeech-200.jpg',
-    category: 'research',
+    category: 'group',
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const projects = [
     tags: ['Speech Processing', 'ASR', 'Diarization', 'Python'],
     github: 'https://github.com/unruli/AfriSpeech-Dialog',
     image: '/projects/afrispeech.jpg',
-    category: 'research',
+    category: 'group',
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const projects = [
     tags: ['ASR', 'Deep Learning', 'NVIDIA NeMo', 'NVIDIA Riva', 'Python', 'GPU Computing'],
     github: 'https://github.com/unruli/ASR-Fine-Tuning-with-Nvidia-NeMo',
     image: '/projects/nemo-asr.jpg',
-    category: 'research',
+    category: 'personal',
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const projects = [
     github: 'https://github.com/unruli/Portfolio-website',
     demo: 'https://chibuzor.vercel.app/',
     image: '/projects/portfolio.jpg',
-    category: 'web',
+    category: 'personal',
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ const projects = [
     tags: ['Text-to-Speech', 'Speech Synthesis', 'African Voices', 'Deep Learning', 'Python'],
     github: 'https://github.com/intron-innovation/AfriSpeech-TTS',
     image: '/projects/afrispeech-tts.jpg',
-    category: 'research',
+    category: 'group',
   },
   {
     id: 6,
@@ -59,7 +59,7 @@ const projects = [
     tags: ['RAG', 'NVIDIA NIM', 'LangChain', 'Streamlit', 'LLM', 'Vector Embeddings'],
     github: 'https://github.com/unruli/Building-RAG-Agents-with-LLms',
     image: '/projects/rag-nim.jpg',
-    category: 'research',
+    category: 'personal',
   },
   {
     id: 7,
@@ -68,11 +68,15 @@ const projects = [
     tags: ['Multi-Agent Systems', 'CrewAI', 'OpenAI', 'LLM', 'Python', 'Agent Orchestration'],
     github: 'https://github.com/unruli/Mutli-Agent-systems',
     image: '/projects/crewai.jpg',
-    category: 'research',
+    category: 'personal',
   },
 ]
 
-const categories = ['all', ...Array.from(new Set(projects.map(project => project.category)))]
+const categories = [
+  { id: 'all', label: 'All Projects' },
+  { id: 'group', label: 'Group Research Projects' },
+  { id: 'personal', label: 'Personal Projects' }
+]
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = React.useState('all')
@@ -94,7 +98,7 @@ export default function Projects() {
             Projects
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            A collection of my research projects, software applications, and academic work.
+            A collection of Group Research projects and Personal AI projects.
           </p>
         </motion.div>
 
@@ -102,15 +106,15 @@ export default function Projects() {
         <div className="flex flex-wrap gap-2 justify-center mb-12">
           {categories.map((category) => (
             <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
+              key={category.id}
+              onClick={() => setSelectedCategory(category.id)}
               className={`px-4 py-2 rounded-full text-sm capitalize transition-colors ${
-                selectedCategory === category
+                selectedCategory === category.id
                   ? 'bg-blue-600 text-white'
                   : 'bg-white text-gray-700 hover:bg-gray-100 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700'
               }`}
             >
-              {category}
+              {category.label}
             </button>
           ))}
         </div>
