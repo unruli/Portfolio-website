@@ -51,7 +51,6 @@ npm run dev
 yarn dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Project Structure
 
@@ -76,9 +75,7 @@ src/
 3. Add your projects in `src/app/projects/page.tsx`
 4. Update social media links in `src/app/contact/page.tsx`
 
-## Deployment
 
-The easiest way to deploy your portfolio is to use the [Vercel Platform](https://vercel.com/new).
 
 ## License
 
