@@ -70,6 +70,15 @@ const projects = [
     image: '/projects/crewai.jpg',
     category: 'personal',
   },
+  {
+    id: 8,
+    title: 'Real-Time Feedback System for Student Presentations',
+    description: 'A smart feedback tool designed to analyze and improve students\' oral presentation skills by evaluating speech clarity, filler word usage, pacing, tone, and emotions. The system offers real-time or post-hoc feedback, empowering students to reflect on and improve their communication effectiveness—an essential skill for computing and engineering professionals.',
+    tags: ['Speech Analysis', 'Education Technology', 'Real-time Feedback', 'Python', 'Machine Learning', 'Audio Processing'],
+    github: 'https://github.com/unruli/Real-Time-Feedback-System-for-Student-Presentations',
+    image: '/projects/presentation-feedback.jpg',
+    category: 'personal',
+  },
 ]
 
 const categories = [
