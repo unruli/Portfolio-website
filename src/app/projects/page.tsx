@@ -79,6 +79,15 @@ const projects = [
     image: '/projects/presentation-feedback.jpg',
     category: 'personal',
   },
+  {
+    id: 9,
+    title: 'Speechbrain-LLaMA3-Story-Writer',
+    description: 'Turn your voice prompt into a story! This project uses SpeechBrain to transcribe spoken audio into text, and passes the transcribed prompt to a LLaMA 3 language model to generate a creative short story. Features include voice-to-text conversion, story generation with Meta\'s LLaMA 3, and a seamless pipeline from spoken prompt to creative writing.',
+    tags: ['Speech-to-Text', 'LLM', 'Story Generation', 'SpeechBrain', 'LLaMA 3', 'Python'],
+    github: 'https://github.com/unruli/Speechbrain-Llama3-story-writer',
+    image: '/projects/story-writer.jpg',
+    category: 'personal',
+  },
 ]
 
 const categories = [
