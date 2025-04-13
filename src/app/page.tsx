@@ -61,10 +61,10 @@ export default function Home() {
               Chibuzor Okocha
             </h1>
             <p className="text-xl md:text-2xl text-white max-w-2xl mx-auto">
-              PhD Student & Research Assistant in AI, NLP, and Computing Education
+              PhD Student & Research Assistant in AI, NLP, and Human Computer Interaction
             </p>
             <p className="text-lg text-white max-w-2xl mx-auto">
-              Master of Science in Engineering Education (Expected Summer 2025)
+              Master of Science in Engineering Education (Summer 2025)
             </p>
             <div className="flex justify-center space-x-4">
               <a
