@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Chibuzor Okocha - Portfolio',
-  description: 'Academic portfolio showcasing research in AI, NLP, and Computing Education',
+  description: 'Academic portfolio showcasing research in AI, NLP, and Human Computer Interaction',
 }
 
 export default function RootLayout({

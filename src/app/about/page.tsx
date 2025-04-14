@@ -13,14 +13,14 @@ const education = [
   {
     degree: 'PhD (Student) in Engineering Education',
     institution: 'University of Florida',
-    status: 'Expected Fall 2027',
-    description: 'Research focus on AI, Speech Technology, NLP, and Computing Education',
+    status: 'Fall 2027',
+    description: 'Research focus on AI, Speech Technology, NLP, and Human Computer Interaction',
   },
   {
     degree: 'Master of Science in Engineering Education',
     institution: 'University of Florida',
-    status: 'Expected Summer 2025',
-    description: 'Focusing on AI, NLP, and Computing Education Research',
+    status: 'Summer 2025',
+    description: 'Focusing on AI, NLP, and Human Computer Interaction Research',
   },
   {
     degree: 'Bachelor of Science in Computer Engineering',
@@ -35,7 +35,7 @@ const experience = [
     title: 'Research Assistant',
     institution: 'University of Florida',
     period: 'Present',
-    description: 'Conducting research in AI, NLP, and Computing Education',
+    description: 'Conducting research in AI, NLP, and Human Computer Interaction',
   },
 ]
 
@@ -46,7 +46,7 @@ const skills = [
   'Deep Learning',
   'Python',
   'Machine Learning',
-  'Computing Education',
+  'Human Computer Interaction',
   'Research Methodology',
 ]
 
@@ -64,7 +64,7 @@ export default function About() {
             About Me
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            I am a PhD student and research assistant at the University of Florida, specializing in AI, Speech Technology, NLP, and Computing Education. My research focuses on developing innovative solutions in speech technology and improving computer science education through interdisciplinary approaches.
+            I am a PhD student and research assistant at the University of Florida, specializing in AI, Speech Technology, NLP, and Human Computer Interaction. My research focuses on developing innovative solutions in speech technology and improving computer science education through interdisciplinary approaches.
           </p>
         </motion.div>
 
