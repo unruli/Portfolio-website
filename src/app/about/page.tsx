@@ -58,7 +58,7 @@ export default function About() {
             About Me
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            I am a PhD student and research assistant at the University of Florida, specializing in AI, Speech Technology, NLP, and Human Computer Interaction. My research focuses on developing innovative solutions in speech technology and improving computer science education through interdisciplinary approaches.
+            I am a graduate research assistant at the University of Florida, specializing in AI, Speech Technology, NLP, and Human Computer Interaction. My research focuses on developing innovative solutions in speech technology and improving computer science education through interdisciplinary approaches.
           </p>
         </motion.div>
 
