@@ -17,6 +17,11 @@ const researchInterests = [
     icon: CpuChipIcon,
   },
   {
+    title: 'Audio and Speech Technology',
+    description: 'Developing advanced speech recognition and audio processing systems',
+    icon: LightBulbIcon,
+  },
+  {
     title: 'Natural Language Processing',
     description: 'Advancing language understanding and generation models',
     icon: BookOpenIcon,
@@ -26,11 +31,7 @@ const researchInterests = [
     description: 'Improving teaching methods in computer science',
     icon: AcademicCapIcon,
   },
-  {
-    title: 'Audio and Speech Technology',
-    description: 'Developing advanced speech recognition and audio processing systems',
-    icon: LightBulbIcon,
-  },
+
 ]
 
 export default function Home() {
