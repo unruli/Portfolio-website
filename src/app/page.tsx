@@ -12,26 +12,25 @@ import {
 
 const researchInterests = [
   {
-    title: 'Artificial Intelligence',
-    description: 'Exploring cutting-edge AI technologies and their applications',
-    icon: CpuChipIcon,
-  },
-  {
-    title: 'Audio and Speech Technology',
-    description: 'Developing advanced speech recognition and audio processing systems',
+    title: 'Speech and Audio AI',
+    description: 'Developing advanced AI systems for speech and audio processing applications',
     icon: LightBulbIcon,
   },
   {
-    title: 'Natural Language Processing',
-    description: 'Advancing language understanding and generation models',
+    title: 'Audio Language Models',
+    description: 'Researching reasoning capabilities and cognitive processes in audio language models',
+    icon: CpuChipIcon,
+  },
+  {
+    title: 'Accented Speech Recognition',
+    description: 'Building robust speech recognition systems for diverse accents and dialects',
     icon: BookOpenIcon,
   },
   {
-    title: 'Human Computer Interaction',
-    description: 'Improving teaching methods in computer science',
+    title: 'Multilingual Audio AI',
+    description: 'Creating inclusive AI systems that work across multiple languages and cultures',
     icon: AcademicCapIcon,
   },
-
 ]
 
 export default function Home() {
@@ -62,10 +61,10 @@ export default function Home() {
               Chibuzor Okocha
             </h1>
             <p className="text-xl md:text-2xl text-white max-w-2xl mx-auto">
-              Research Assistant in AI, Speech Processing and Human Computer Interaction
+              PhD Student in Engineering Education
             </p>
             <p className="text-lg text-white max-w-2xl mx-auto">
-              Master of Science in Engineering Education (August 2025)
+              PhD Minor in Computer Science | University of Florida
             </p>
             <div className="flex justify-center space-x-4">
               <a

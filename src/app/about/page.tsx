@@ -11,37 +11,55 @@ import {
 
 const education = [
   {
+    degree: 'PhD in Engineering Education',
+    institution: 'University of Florida',
+    status: 'In Progress',
+    description: 'Research focus on Speech and Audio AI, reasoning in Audio Language Models, accented and multilingual speech recognition systems',
+  },
+  {
+    degree: 'PhD Minor in Computer Science',
+    institution: 'University of Florida',
+    status: 'In Progress',
+    description: 'Complementary studies in computer science with focus on AI and speech processing',
+  },
+  {
     degree: 'Master of Science in Engineering Education',
     institution: 'University of Florida',
-    status: 'Summer 2025',
-    description: 'Focusing on AI, NLP, and Human Computer Interaction Research',
+    status: 'August 2025',
+    description: 'Thesis research on educational technology and AI in engineering education',
   },
   {
     degree: 'Bachelor of Science in Computer Engineering',
     institution: 'University of Florida',
-    status: 'Completed in 2020',
-    
+    status: 'Completed 2020',
+    description: 'Foundation in computer engineering principles and systems',
   },
 ]
 
 const experience = [
   {
-    title: 'Research Assistant',
+    title: 'Graduate Research Assistant',
+    institution: 'University of Florida - Engineering Education',
+    period: '2023 - Present',
+    description: 'Conducting research on Speech and Audio AI, developing reasoning capabilities in Audio Language Models, and creating robust systems for accented and multilingual speech processing',
+  },
+  {
+    title: 'Teaching Assistant',
     institution: 'University of Florida',
-    period: 'Present',
-    description: 'Conducting research in AI, NLP, and Human Computer Interaction',
+    period: '2022 - 2023',
+    description: 'Assisted with undergraduate engineering courses, developed educational materials, and mentored students in research projects',
   },
 ]
 
 const skills = [
-  'Artificial Intelligence',
-  'Natural Language Processing',
-  'Speech Recognition',
+  'Speech and Audio AI',
+  'Audio Language Models',
+  'Accented Speech Recognition',
+  'Multilingual Speech Processing',
   'Deep Learning',
-  'Python',
-  'Machine Learning',
-  'Human Computer Interaction',
+  'Python Programming',
   'Research Methodology',
+  'Statistical Analysis',
 ]
 
 export default function About() {
@@ -58,7 +76,7 @@ export default function About() {
             About Me
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            I am a graduate research assistant at the University of Florida, specializing in AI, Speech Technology, NLP, and Human Computer Interaction. My research focuses on developing innovative solutions in speech technology and improving computer science education through interdisciplinary approaches.
+            I am a PhD student in Engineering Education with a minor in Computer Science at the University of Florida. My research focuses on Speech and Audio AI, reasoning in Audio Language Models, and developing robust systems for accented and multilingual speech processing.
           </p>
         </motion.div>
 

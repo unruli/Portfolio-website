@@ -76,7 +76,7 @@ export default function Blog() {
             Blog & Resources
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            Insights, tutorials, and white papers on AI, speech technology, and human computer interaction.
+            Research insights and publications on Speech and Audio AI, Audio Language Models, and multilingual speech processing.
           </p>
         </motion.div>
 

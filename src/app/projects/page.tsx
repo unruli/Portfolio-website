@@ -98,7 +98,7 @@ export default function Projects() {
             Projects
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            A collection of Group Research projects and Personal AI projects.
+            Research projects in engineering education, educational technology, and speech processing for learning applications.
           </p>
         </motion.div>
 
