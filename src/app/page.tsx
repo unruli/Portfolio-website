@@ -114,78 +114,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Research Interests */}
-      <section id="research" className="py-20 bg-gray-50 dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
-            Research Interests
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {researchInterests.map((interest, index) => (
-              <motion.div
-                key={interest.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-              >
-                <interest.icon className="h-12 w-12 text-blue-600 dark:text-blue-400 mb-4" />
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  {interest.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  {interest.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Recent Publications Section */}
-      <section id="publications" className="py-20 bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
-            Recent Publications
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg"
-            >
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                AfriSpeech-Dialog: A Benchmark Dataset for Spontaneous English Conversations
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                NAACL 2025 - A comprehensive dataset for evaluating ASR and summarization on African-accented speech.
-              </p>
-              <a href="/publications" className="text-blue-600 dark:text-blue-400 hover:underline">
-                View all publications →
-              </a>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg"
-            >
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Navigating Unfamiliar Waters: Enhancing Intercultural Understanding
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                FIE 2024 - Research on academic self-efficacy among computer science students in international settings.
-              </p>
-              <a href="/publications" className="text-blue-600 dark:text-blue-400 hover:underline">
-                View all publications →
-              </a>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       {/* About Me Section */}
       <section id="about" className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -209,8 +137,8 @@ export default function Home() {
             >
               <div className="relative w-full h-96 lg:h-[500px] rounded-lg overflow-hidden">
                 <Image
-                  src="/profile.jpg"
-                  alt="Chibuzor Okocha"
+                  src="/about-me.jpg"
+                  alt="Chibuzor Okocha presenting at conference"
                   fill
                   className="object-cover"
                 />
@@ -301,6 +229,78 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Research Interests */}
+      <section id="research" className="py-20 bg-gray-50 dark:bg-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
+            Research Interests
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {researchInterests.map((interest, index) => (
+              <motion.div
+                key={interest.title}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <interest.icon className="h-12 w-12 text-blue-600 dark:text-blue-400 mb-4" />
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  {interest.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300">
+                  {interest.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Recent Publications Section */}
+      <section id="publications" className="py-20 bg-white dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
+            Recent Publications
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg"
+            >
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                AfriSpeech-Dialog: A Benchmark Dataset for Spontaneous English Conversations
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                NAACL 2025 - A comprehensive dataset for evaluating ASR and summarization on African-accented speech.
+              </p>
+              <a href="/publications" className="text-blue-600 dark:text-blue-400 hover:underline">
+                View all publications →
+              </a>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg"
+            >
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                Navigating Unfamiliar Waters: Enhancing Intercultural Understanding
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                FIE 2024 - Research on academic self-efficacy among computer science students in international settings.
+              </p>
+              <a href="/publications" className="text-blue-600 dark:text-blue-400 hover:underline">
+                View all publications →
+              </a>
             </motion.div>
           </div>
         </div>
