@@ -186,6 +186,126 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Me Section */}
+      <section id="about" className="py-20 bg-white dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              About Me
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="relative w-full h-96 lg:h-[500px] rounded-lg overflow-hidden">
+                <Image
+                  src="/profile.jpg"
+                  alt="Chibuzor Okocha"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="space-y-6"
+            >
+              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                Hi there, I am Chibuzor Okocha, a PhD student in Engineering Education with a minor in Computer Science at the University of Florida. 
+                I am a member of the <a 
+                  href="https://ufdatastudio.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline font-semibold"
+                >
+                  UF DataStudio lab
+                </a>, where my research focuses on the intersection of Speech and Audio AI, reasoning in Audio Language Models, 
+                and developing robust systems for accented and multilingual speech processing.
+              </p>
+
+              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                My work aims to enhance the understanding of how both learners and educators interact with speech technologies 
+                in educational contexts. I am passionate about creating inclusive AI systems that work across multiple languages 
+                and cultures, particularly focusing on underrepresented accents and dialects.
+              </p>
+
+              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                I hold a Bachelor of Science in Computer Engineering from the University of Florida. Before pursuing my doctoral studies, 
+                I gained valuable experience developing practical technology solutions, which now informs my research approach to bridge 
+                technology and education to improve learning outcomes.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <a
+                  href="mailto:c.okocha@ufl.edu"
+                  className="px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors text-center"
+                >
+                  Contact Me
+                </a>
+                <a
+                  href="/cv.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-center"
+                >
+                  Download CV
+                </a>
+              </div>
+
+              <div className="pt-6">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                  Recent News
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-yellow-500 text-lg">🎉</span>
+                    <div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[1/15/25]</span>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        Excited to present our <span className="font-semibold">AfriSpeech-Dialog</span> work at NAACL 2025.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <span className="text-blue-500 text-lg">🔬</span>
+                    <div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[10/24]</span>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        Presented research on intercultural understanding at <span className="font-semibold">FIE 2024</span> conference.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <span className="text-green-500 text-lg">🎤</span>
+                    <div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[6/24]</span>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        Contributing to <span className="font-semibold">AfriSpeech-200</span> dataset with 100+ African accents.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Recent Projects Section */}
       <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
