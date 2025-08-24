@@ -47,8 +47,8 @@ export default function Home() {
       <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/gallery/fiegoals.jpg"
-            alt="Research Goals Background"
+            src="/gallery/fiepresentation.jpg"
+            alt="Conference Presentation Background"
             fill
             className="object-cover"
             priority
