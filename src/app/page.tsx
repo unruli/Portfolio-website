@@ -75,7 +75,7 @@ export default function Home() {
               Chibuzor Okocha
             </h1>
             <p className="text-xl md:text-2xl text-white max-w-2xl mx-auto">
-              PhD Student in Engineering Education
+              PhD Student in Engineering
             </p>
             <p className="text-lg text-white max-w-2xl mx-auto">
               PhD Minor in Computer Science | University of Florida
@@ -206,6 +206,16 @@ export default function Home() {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
+                    <span className="text-purple-500 text-lg">🎤</span>
+                    <div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[Sept 25]</span>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        Excited to present my research at the <span className="font-semibold">TTIC Summer Workshop on Foundations of Speech and Audio Foundation Models</span> in Chicago.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
                     <span className="text-yellow-500 text-lg">🎉</span>
                     <div>
                       <span className="text-sm text-gray-500 dark:text-gray-400">[1/15/25]</span>
@@ -275,40 +285,85 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
             Recent Publications
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg"
-            >
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                AfriSpeech-Dialog: A Benchmark Dataset for Spontaneous English Conversations
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                NAACL 2025 - A comprehensive dataset for evaluating ASR and summarization on African-accented speech.
-              </p>
-              <a href="/publications" className="text-blue-600 dark:text-blue-400 hover:underline">
-                View all publications →
-              </a>
-            </motion.div>
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-6">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="border-l-4 border-blue-600 pl-6 py-4"
+              >
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Afrispeech-Dialog: A Benchmark Dataset for Spontaneous English Conversations in Healthcare and Beyond
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-2">
+                  <span className="font-medium">NAACL 2025</span> | Mardhiyah Sanni, Tassallah Abdullahi, Devendra D. Kayande, Emmanuel Ayodele, Naome A. Etori, Michael S. Mollel, Moshood Yekini, <span className="font-semibold">Chibuzor Okocha</span>, et al.
+                </p>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">
+                  A comprehensive dataset for evaluating ASR and summarization on African-accented speech conversations.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="border-l-4 border-green-600 pl-6 py-4"
+              >
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  AfriVox: Probing Multilingual and Accent Robustness of Speech LLMs
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-2">
+                  <span className="font-medium">ACL ARR July 2025 (Under Review)</span> | <a href="https://openreview.net/forum?id=CUXfIv07j5" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">OpenReview</a>
+                </p>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">
+                  Open-source benchmark across 20 African languages and 100+ African English accents, evaluating multimodal speech LLMs vs traditional ASR/AST models.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="border-l-4 border-purple-600 pl-6 py-4"
+              >
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Navigating Unfamiliar Waters: Enhancing Intercultural Understanding and Academic Self-Efficacy
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-2">
+                  <span className="font-medium">IEEE FIE 2024</span> | <span className="font-semibold">Chibuzor J. Okocha</span>, Jeremiah J. Blanchard, Gloria J. Kim, Mariko Adachi
+                </p>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">
+                  Research on academic self-efficacy among computer science students in international study abroad programs.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="border-l-4 border-orange-600 pl-6 py-4"
+              >
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Microelectronics Research and Global Competencies: Unpacking Research Abroad Experiences
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-2">
+                  <span className="font-medium">ASEE 2024</span> | <span className="font-semibold">Chibuzor J. Okocha</span>, Gloria J. Kim, Jae Wan Choi, Yong-Kyu Yoon
+                </p>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">
+                  Investigating global competencies development through international research experiences.
+                </p>
+              </motion.div>
+            </div>
             
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg"
-            >
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Navigating Unfamiliar Waters: Enhancing Intercultural Understanding
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                FIE 2024 - Research on academic self-efficacy among computer science students in international settings.
-              </p>
-              <a href="/publications" className="text-blue-600 dark:text-blue-400 hover:underline">
-                View all publications →
+            <div className="text-center mt-12">
+              <a 
+                href="/publications" 
+                className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                View All Publications
               </a>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
