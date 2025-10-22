@@ -125,7 +125,7 @@ export default function Home() {
                   GitHub
                 </a>
                 <a
-                  href="https://scholar.google.com/citations?user=your-profile"
+                  href="https://scholar.google.com/citations?user=mycXdzwAAAAJ&hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
