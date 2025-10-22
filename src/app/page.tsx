@@ -274,23 +274,6 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="border-l-4 border-purple-600 pl-6 py-4"
-            >
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Navigating Unfamiliar Waters: Enhancing Intercultural Understanding and Academic Self-Efficacy
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-2">
-                <span className="font-medium">IEEE FIE 2024</span> | <span className="font-semibold">Chibuzor J. Okocha</span>, Jeremiah J. Blanchard, Gloria J. Kim, Mariko Adachi
-              </p>
-              <p className="text-gray-500 dark:text-gray-400 text-sm">
-                Research on academic self-efficacy among computer science students in international study abroad programs.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
               className="border-l-4 border-red-600 pl-6 py-4"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
@@ -307,7 +290,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
               className="border-l-4 border-orange-600 pl-6 py-4"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
