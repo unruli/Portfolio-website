@@ -133,6 +133,54 @@ export default function Home() {
                   Google Scholar
                 </a>
               </div>
+
+              {/* Recent News */}
+              <div className="pt-6">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                  Recent News
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-red-500 text-lg">📝</span>
+                    <div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[Jan 25]</span>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">
+                        Submitted three papers to <span className="font-semibold">ICASSP 2026</span> on neural audio codecs and child speech analysis with LALMs.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <span className="text-purple-500 text-lg">🎤</span>
+                    <div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[Sept 25]</span>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">
+                        Excited to present my research at the <span className="font-semibold">TTIC Summer Workshop on Foundations of Speech and Audio Foundation Models</span> in Chicago.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <span className="text-yellow-500 text-lg">🎉</span>
+                    <div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[Jan 25]</span>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">
+                        Excited to present our <span className="font-semibold">AfriSpeech-Dialog</span> work at NAACL 2025.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <span className="text-blue-500 text-lg">🔬</span>
+                    <div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[Oct 24]</span>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">
+                        Presented research on intercultural understanding at <span className="font-semibold">FIE 2024</span> conference.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
