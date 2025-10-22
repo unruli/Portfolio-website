@@ -44,17 +44,17 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center bg-white dark:bg-gray-900">
+      <section id="hero" className="py-16 bg-white dark:bg-gray-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
             {/* Profile Image */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="lg:col-span-1 flex justify-center"
+              className="lg:col-span-1"
             >
-              <div className="relative w-80 h-80 rounded-lg overflow-hidden shadow-2xl">
+              <div className="relative w-64 h-64 mx-auto rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src="/about-me.jpg"
                   alt="Chibuzor Okocha"
@@ -70,86 +70,67 @@ export default function Home() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="lg:col-span-2 space-y-8"
+              className="lg:col-span-3 space-y-6"
             >
-              <div className="space-y-4">
-                <h1 className="text-4xl lg:text-5xl font-serif font-bold text-gray-900 dark:text-white leading-tight">
+              <div className="space-y-3">
+                <h1 className="text-3xl lg:text-4xl font-serif font-bold text-gray-900 dark:text-white">
                   Chibuzor Okocha
                 </h1>
-                <div className="space-y-2">
-                  <p className="text-xl text-gray-700 dark:text-gray-300 font-medium">
-                    PhD Student in Engineering
-                  </p>
-                  <p className="text-lg text-gray-600 dark:text-gray-400">
-                    PhD Minor in Computer Science
-                  </p>
-                  <p className="text-lg text-blue-600 dark:text-blue-400 font-medium">
-                    University of Florida | <a 
+                <div className="space-y-1">
+                  <p className="text-lg text-gray-700 dark:text-gray-300">
+                    I am a PhD student in Engineering with a minor in Computer Science at the University of Florida, where I am privileged to be a member of the <a 
                       href="https://ufdatastudio.com/" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="hover:underline"
+                      className="text-blue-600 dark:text-blue-400 hover:underline"
                     >
                       UF DataStudio Lab
-                    </a>
+                    </a>. Previously, I worked on building speech and audio models for African languages and accents.
                   </p>
                 </div>
               </div>
 
-              {/* Research Focus */}
-              <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
-                <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                  Research Focus
-                </h2>
+              <div className="space-y-4">
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Speech and Audio AI • Audio Language Models • Accented and Multilingual Speech Processing • 
-                  Neural Audio Codecs • Speaker Diarization
+                  My research is focused on Speech and Audio AI, reasoning in Audio Language Models, and developing robust systems for accented and multilingual speech processing. I am passionate about creating inclusive AI systems that work across multiple languages and cultures.
+                </p>
+                
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Beyond research, I am passionate about mentoring aspiring AI researchers, building open science communities, and contributing to collaborative initiatives. I firmly believe in democratizing access to knowledge and fostering collaborative ecosystems.
                 </p>
               </div>
 
-              {/* Quick Stats */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">6</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Publications</div>
-                </div>
-                <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
-                  <div className="text-2xl font-bold text-green-600 dark:text-green-400">4</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Under Review</div>
-                </div>
-                <div className="text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
-                  <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">9</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Projects</div>
-                </div>
-                <div className="text-center p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
-                  <div className="text-2xl font-bold text-orange-600 dark:text-orange-400">20+</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Languages</div>
-                </div>
-              </div>
-
-              {/* Contact Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/* Contact Links */}
+              <div className="flex flex-wrap gap-4 pt-4">
                 <a
                   href="mailto:c.okocha@ufl.edu"
-                  className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-center font-medium"
+                  className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
                 >
-                  Contact
+                  Email
                 </a>
                 <a
                   href="/cv.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors text-center font-medium"
+                  className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
                 >
-                  Curriculum Vitae
+                  CV
                 </a>
                 <a
                   href="https://github.com/unruli"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors text-center font-medium"
+                  className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
                 >
                   GitHub
+                </a>
+                <a
+                  href="https://scholar.google.com/citations?user=your-profile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                >
+                  Google Scholar
                 </a>
               </div>
             </motion.div>
@@ -157,8 +138,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Me Section */}
-      <section id="about" className="py-20 bg-white dark:bg-gray-900">
+      {/* Research Areas */}
+      <section id="research" className="py-12 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -297,41 +278,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Research Interests */}
-      <section id="research" className="py-20 bg-gray-50 dark:bg-gray-800">
+      {/* Research Areas */}
+      <section id="research" className="py-12 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-serif font-bold text-gray-900 dark:text-white mb-4">
-              Research Areas
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              My research spans multiple domains in speech and audio processing, with a focus on inclusive AI systems for underrepresented languages and accents.
-            </p>
-          </motion.div>
+          <h2 className="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-6">
+            Research Areas
+          </h2>
           
-          <div className="space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {researchInterests.map((interest, index) => (
               <motion.div
                 key={interest.title}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-blue-600"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm border-l-4 border-blue-600"
               >
-                <div className="flex items-start space-x-6">
-                  <div className="flex-shrink-0">
-                    <interest.icon className="h-10 w-10 text-blue-600 dark:text-blue-400" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                <div className="flex items-start space-x-4">
+                  <interest.icon className="h-6 w-6 text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                       {interest.title}
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                       {interest.description}
                     </p>
                   </div>
@@ -343,13 +312,12 @@ export default function Home() {
       </section>
 
       {/* Recent Publications Section */}
-      <section id="publications" className="py-20 bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
+      <section id="publications" className="py-12 bg-white dark:bg-gray-900">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-6">
             Recent Publications
           </h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-6">
+          <div className="space-y-4">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -465,13 +433,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Recent Projects Section */}
-      <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
+      {/* Featured Projects Section */}
+      <section id="projects" className="py-12 bg-gray-50 dark:bg-gray-800">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-6">
             Featured Projects
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -539,12 +507,12 @@ export default function Home() {
             </motion.div>
           </div>
           
-          <div className="text-center mt-12">
+          <div className="text-center mt-8">
             <a 
               href="/projects" 
-              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
             >
-              View All Projects
+              View All Projects →
             </a>
           </div>
         </div>
