@@ -145,7 +145,7 @@ export default function Home() {
                     <div>
                       <span className="text-sm text-gray-500 dark:text-gray-400">[2025]</span>
                       <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Presenting poster on <span className="font-semibold">"Towards Fair, Precise & Interactive AI for Children's Speech and Language"</span> at ASRU 2025 Satellite Workshop in Hawaii.
+                        Presenting poster <span className="font-semibold">"Can Large Audio Language Models Understand Child Stuttering Speech? Speech Summarization, and Source Separation"</span> at ASRU 2025 Satellite Workshop in Hawaii.
                       </p>
                     </div>
                   </div>
