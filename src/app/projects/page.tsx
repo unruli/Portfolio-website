@@ -70,6 +70,24 @@ const projects = [
     image: '/projects/story-writer.jpg',
     category: 'personal',
   },
+  {
+    id: 8,
+    title: 'CodecEval-Africa',
+    description: 'Neural audio codecs evaluation framework for low-resource African language settings. This project evaluates the performance of various neural audio codecs on African speech data, addressing the gap in codec performance for underrepresented languages and accents.',
+    tags: ['Neural Audio Codecs', 'Low-Resource Languages', 'African Languages', 'Audio Compression', 'Python'],
+    github: 'https://github.com/ufdatastudio/CodecEval-Africa',
+    image: '/projects/codec-eval.jpg',
+    category: 'group',
+  },
+  {
+    id: 9,
+    title: 'Child Speech Analysis with LALMs',
+    description: 'Evaluating Large Audio Language Models (LALMs) for child interview summarization, focusing on speaker separation and content isolation from mixed interviewer-child audio. The project addresses challenging scenarios like children who stutter and aims to maintain speaker purity in downstream summaries.',
+    tags: ['Child Speech', 'Audio Language Models', 'Speaker Separation', 'Speech Summarization', 'Python'],
+    github: 'https://github.com/ufdatastudio/child-speech-analysis',
+    image: '/projects/child-speech.jpg',
+    category: 'group',
+  },
 ]
 
 const categories = [

@@ -62,6 +62,37 @@ const publications = [
     abstract: 'Global competencies are essential for engineering students in today\'s globalized world. This work investigates this aspect of an International Research Experience for Students (IRES) program funded by the National Science Foundation (NSF). The NSF IRES: Interdisciplinary Research in Korea on Applied Smart Systems (IRiKA) recruited both undergraduate and graduate students with diverse backgrounds from four public and private US universities. Due to the constraints of the grant, only US citizens and permanent residents were eligible to apply. Over the duration of the grant, three cohorts were deployed. Due to the pandemic, the program did not run in 2020 and 2022. In all, 18 participants engaged in an 8-week research internship as part of the IRiKA program. This study focuses on the experience of the 2023 cohort - specifically, a subset of the 2023 cohort that worked on microelectronics device projects. This study employed a qualitative methods approach anchored in the PISA 2018 Global Competence theoretical framework. By analyzing qualitative data from weekly blog post reflections and student interviews, this work aims to unpack the complex ways global competencies are cultivated among undergraduate and graduate engineering students with varying degrees of prior research experience. The findings of this research are expected to inform future engineering education practices, providing valuable insights for educators, policymakers, and institutions aiming to enhance the global competencies of their students through international research collaborations.',
     pdf: 'https://doi.org/10.18260/1-2--47777',
   },
+  {
+    id: 6,
+    title: 'Neural Audio Codec Evaluation for Low-Resource African Languages',
+    authors: 'Chibuzor Okocha, [Co-authors TBD]',
+    venue: 'ICASSP',
+    year: '2026',
+    type: 'conference',
+    abstract: 'This work presents a comprehensive evaluation framework for neural audio codecs in low-resource African language settings. We assess the performance of various state-of-the-art neural audio codecs on African speech data, addressing the significant gap in codec performance evaluation for underrepresented languages and accents.',
+    status: 'Under Review',
+  },
+  {
+    id: 7,
+    title: 'Large Audio Language Models for Child Speech Analysis and Summarization',
+    authors: 'Chibuzor Okocha, [Co-authors TBD]',
+    venue: 'ICASSP',
+    year: '2026',
+    type: 'conference',
+    abstract: 'We evaluate Large Audio Language Models (LALMs) for child interview summarization, focusing on speaker separation and content isolation from mixed interviewer-child audio. This work addresses challenging scenarios including children who stutter and aims to maintain speaker purity in downstream summaries without explicit diarization.',
+    status: 'Under Review',
+  },
+  {
+    id: 8,
+    title: 'Domain-Aware Speaker Diarization On African-Accented English',
+    authors: 'Chibuzor Okocha, Kelechi Ezema, Christan Grant',
+    venue: 'arXiv preprint',
+    year: '2025',
+    type: 'conference',
+    abstract: 'This study examines domain effects in speaker diarization for African-accented English. We evaluate multiple production and open systems on general and clinical dialogues under a strict DER protocol that scores overlap. A consistent domain penalty appears for clinical speech and remains significant across models. Error analysis attributes much of this penalty to false alarms and missed detections, aligning with short turns and frequent overlap. We test lightweight domain adaptation by fine-tuning a segmentation module on accent-matched data; it reduces error but does not eliminate the gap.',
+    pdf: 'https://www.arxiv.org/abs/2509.21554',
+    status: 'Under Review',
+  },
   // Add more publications as needed
 ]
 

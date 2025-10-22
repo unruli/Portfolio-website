@@ -44,80 +44,116 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/gallery/fiepresentation.jpg"
-            alt="Conference Presentation Background"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-black/50" />
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="space-y-8"
-          >
-            <div className="relative w-64 h-64 mx-auto mb-8">
-              <Image
-                src="/profile.jpg"
-                alt="Chibuzor Okocha"
-                fill
-                className="rounded-full object-cover"
-                priority
-              />
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white">
-              Chibuzor Okocha
-            </h1>
-            <p className="text-xl md:text-2xl text-white max-w-2xl mx-auto">
-              PhD Student in Engineering
-            </p>
-            <p className="text-lg text-white max-w-2xl mx-auto">
-              PhD Minor in Computer Science | University of Florida
-            </p>
-            <div className="flex justify-center space-x-4">
-              <a
-                href="/cv.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                Download CV
-              </a>
-              <a
-                href="mailto:c.okocha@ufl.edu"
-                className="px-6 py-3 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-              >
-                Contact Me
-              </a>
-              <a
-                href="https://github.com/unruli"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-              >
-                GitHub
-              </a>
-            </div>
-            
-            {/* Scroll Down Indicator */}
-            <div className="mt-16">
-              <button
-                onClick={() => scrollToSection('research')}
-                className="animate-bounce text-white hover:text-gray-300 transition-colors"
-              >
-                <svg className="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-                <p className="text-sm mt-2">Scroll to explore</p>
-              </button>
-            </div>
-          </motion.div>
+      <section id="hero" className="relative min-h-screen flex items-center justify-center bg-white dark:bg-gray-900">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+            {/* Profile Image */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-1 flex justify-center"
+            >
+              <div className="relative w-80 h-80 rounded-lg overflow-hidden shadow-2xl">
+                <Image
+                  src="/about-me.jpg"
+                  alt="Chibuzor Okocha"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </motion.div>
+
+            {/* Academic Information */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="lg:col-span-2 space-y-8"
+            >
+              <div className="space-y-4">
+                <h1 className="text-4xl lg:text-5xl font-serif font-bold text-gray-900 dark:text-white leading-tight">
+                  Chibuzor Okocha
+                </h1>
+                <div className="space-y-2">
+                  <p className="text-xl text-gray-700 dark:text-gray-300 font-medium">
+                    PhD Student in Engineering
+                  </p>
+                  <p className="text-lg text-gray-600 dark:text-gray-400">
+                    PhD Minor in Computer Science
+                  </p>
+                  <p className="text-lg text-blue-600 dark:text-blue-400 font-medium">
+                    University of Florida | <a 
+                      href="https://ufdatastudio.com/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      UF DataStudio Lab
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              {/* Research Focus */}
+              <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
+                <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+                  Research Focus
+                </h2>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Speech and Audio AI • Audio Language Models • Accented and Multilingual Speech Processing • 
+                  Neural Audio Codecs • Speaker Diarization
+                </p>
+              </div>
+
+              {/* Quick Stats */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">6</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Publications</div>
+                </div>
+                <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
+                  <div className="text-2xl font-bold text-green-600 dark:text-green-400">4</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Under Review</div>
+                </div>
+                <div className="text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+                  <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">9</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Projects</div>
+                </div>
+                <div className="text-center p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
+                  <div className="text-2xl font-bold text-orange-600 dark:text-orange-400">20+</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Languages</div>
+                </div>
+              </div>
+
+              {/* Contact Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="mailto:c.okocha@ufl.edu"
+                  className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-center font-medium"
+                >
+                  Contact
+                </a>
+                <a
+                  href="/cv.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors text-center font-medium"
+                >
+                  Curriculum Vitae
+                </a>
+                <a
+                  href="https://github.com/unruli"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors text-center font-medium"
+                >
+                  GitHub
+                </a>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -206,6 +242,16 @@ export default function Home() {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
+                    <span className="text-red-500 text-lg">📝</span>
+                    <div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[Jan 25]</span>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        Submitted two papers to <span className="font-semibold">ICASSP 2026</span> on neural audio codecs and child speech analysis with LALMs.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
                     <span className="text-purple-500 text-lg">🎤</span>
                     <div>
                       <span className="text-sm text-gray-500 dark:text-gray-400">[Sept 25]</span>
@@ -253,26 +299,43 @@ export default function Home() {
 
       {/* Research Interests */}
       <section id="research" className="py-20 bg-gray-50 dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
-            Research Interests
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl font-serif font-bold text-gray-900 dark:text-white mb-4">
+              Research Areas
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+              My research spans multiple domains in speech and audio processing, with a focus on inclusive AI systems for underrepresented languages and accents.
+            </p>
+          </motion.div>
+          
+          <div className="space-y-8">
             {researchInterests.map((interest, index) => (
               <motion.div
                 key={interest.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-blue-600"
               >
-                <interest.icon className="h-12 w-12 text-blue-600 dark:text-blue-400 mb-4" />
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  {interest.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  {interest.description}
-                </p>
+                <div className="flex items-start space-x-6">
+                  <div className="flex-shrink-0">
+                    <interest.icon className="h-10 w-10 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                      {interest.title}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                      {interest.description}
+                    </p>
+                  </div>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -342,16 +405,50 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
+                className="border-l-4 border-red-600 pl-6 py-4"
+              >
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Neural Audio Codec Evaluation for Low-Resource African Languages
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-2">
+                  <span className="font-medium">ICASSP 2026 (Under Review)</span> | <span className="font-semibold">Chibuzor Okocha</span>, et al.
+                </p>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">
+                  Comprehensive evaluation framework for neural audio codecs on African speech data and low-resource language settings.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
                 className="border-l-4 border-orange-600 pl-6 py-4"
               >
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  Microelectronics Research and Global Competencies: Unpacking Research Abroad Experiences
+                  Large Audio Language Models for Child Speech Analysis and Summarization
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-2">
-                  <span className="font-medium">ASEE 2024</span> | <span className="font-semibold">Chibuzor J. Okocha</span>, Gloria J. Kim, Jae Wan Choi, Yong-Kyu Yoon
+                  <span className="font-medium">ICASSP 2026 (Under Review)</span> | <span className="font-semibold">Chibuzor Okocha</span>, et al.
                 </p>
                 <p className="text-gray-500 dark:text-gray-400 text-sm">
-                  Investigating global competencies development through international research experiences.
+                  Evaluating LALMs for child interview summarization with focus on speaker separation and content isolation.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="border-l-4 border-indigo-600 pl-6 py-4"
+              >
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Domain-Aware Speaker Diarization On African-Accented English
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-2">
+                  <span className="font-medium">arXiv preprint (Under Review)</span> | <span className="font-semibold">Chibuzor Okocha</span>, Kelechi Ezema, Christan Grant | <a href="https://www.arxiv.org/abs/2509.21554" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">arXiv</a>
+                </p>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">
+                  Examining domain effects in speaker diarization for African-accented English across general and clinical dialogues.
                 </p>
               </motion.div>
             </div>
