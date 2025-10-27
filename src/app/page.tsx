@@ -294,13 +294,13 @@ export default function Home() {
               className="border-l-4 border-orange-600 pl-6 py-4"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Large Audio Language Models for Child Speech Analysis and Summarization
+                Can large audio language models understand child stuttering speech?
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-2">
-                <span className="font-medium">ICASSP 2026 (Under Review)</span> | <span className="font-semibold">Chibuzor Okocha</span>, et al.
+                <span className="font-medium">ICASSP 2026 (Under Review)</span> | <span className="font-semibold">Chibuzor Okocha</span>, Maya Bakri, Christan Grant | <a href="https://arxiv.org/abs/2510.20850" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">arXiv</a>
               </p>
               <p className="text-gray-500 dark:text-gray-400 text-sm">
-                Evaluating LALMs for child interview summarization with focus on speaker separation and content isolation.
+                Evaluating LALMs on disfluent child speech for source separation and summarization tasks.
               </p>
             </motion.div>
 

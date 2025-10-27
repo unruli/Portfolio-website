@@ -74,12 +74,13 @@ const publications = [
   },
   {
     id: 7,
-    title: 'Large Audio Language Models for Child Speech Analysis and Summarization',
-    authors: 'Chibuzor Okocha, [Co-authors TBD]',
+    title: 'Can large audio language models understand child stuttering speech? speech summarization, and source separation',
+    authors: 'Chibuzor Okocha, Maya Bakri, Christan Grant',
     venue: 'ICASSP',
     year: '2026',
     type: 'conference',
-    abstract: 'We evaluate Large Audio Language Models (LALMs) for child interview summarization, focusing on speaker separation and content isolation from mixed interviewer-child audio. This work addresses challenging scenarios including children who stutter and aims to maintain speaker purity in downstream summaries without explicit diarization.',
+    abstract: 'Child speech differs from adult speech in acoustics, prosody, and language development, and disfluencies (repetitions, prolongations, blocks) further challenge Automatic Speech Recognition (ASR) and downstream Natural Language Processing (NLP). Recent large audio-language models (LALMs) demonstrate strong cross-modal audio understanding; however, their behavior in disfluent child speech remains underexplored. We evaluate several state-of-the-art LALMs in two settings: an interview (mixed speakers) and a reading task (single child). The tasks are (i) single-channel source separation to isolate the child and (ii) child-only summarization that preserves clinically relevant disfluencies and avoids adult-speech leakage.',
+    pdf: 'https://arxiv.org/abs/2510.20850',
     status: 'Under Review',
   },
   {
