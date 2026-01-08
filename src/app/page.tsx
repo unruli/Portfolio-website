@@ -132,6 +132,14 @@ export default function Home() {
                 >
                   Google Scholar
                 </a>
+                <a
+                  href="https://calendly.com/c-okocha-ufl/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                >
+                  Schedule Meeting
+                </a>
               </div>
 
               {/* Recent News */}
@@ -141,21 +149,31 @@ export default function Home() {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
-                    <span className="text-orange-500 text-lg">🏖️</span>
+                    <span className="text-purple-500 text-lg">🏆</span>
                     <div>
                       <span className="text-sm text-gray-500 dark:text-gray-400">[2025]</span>
                       <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Presenting poster <span className="font-semibold">"Can Large Audio Language Models Understand Child Stuttering Speech? Speech Summarization, and Source Separation"</span> at ASRU 2025 Satellite Workshop in Hawaii.
+                        Received <span className="font-semibold">best paper award</span> at ASRU 2025 Workshop on Childspeech for "Can large audio language models understand child stuttering speech?"
                       </p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <span className="text-red-500 text-lg">📝</span>
+                    <span className="text-green-500 text-lg">✅</span>
                     <div>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">[Jan 25]</span>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[2026]</span>
                       <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Submitted three papers to <span className="font-semibold">ICASSP 2026</span> on neural audio codecs and child speech analysis with LALMs.
+                        AfriVox paper accepted at <span className="font-semibold">EACL 2026</span>!
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500 text-lg">🏖️</span>
+                    <div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[2025]</span>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">
+                        Presenting poster <span className="font-semibold">"Can Large Audio Language Models Understand Child Stuttering Speech? Speech Summarization, and Source Separation"</span> at ASRU 2025 Satellite Workshop in Hawaii.
                       </p>
                     </div>
                   </div>
