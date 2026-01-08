@@ -240,6 +240,22 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
+              className="border-l-4 border-purple-600 pl-6 py-4"
+            >
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                Afrispeech Semantics: Evaluating Audio–Semantic Reasoning in Spoken Language Models Across Domains and Accents
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-2">
+                <span className="font-medium">ACL 2026 (Under Review)</span> | <span className="font-semibold">Chibuzor Okocha</span>, et al.
+              </p>
+              <p className="text-gray-500 dark:text-gray-400 text-sm">
+                Evaluating audio-semantic reasoning capabilities of spoken language models across different domains and African accents.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
               className="border-l-4 border-blue-600 pl-6 py-4"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
@@ -256,14 +272,14 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               className="border-l-4 border-green-600 pl-6 py-4"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 AfriVox: Probing Multilingual and Accent Robustness of Speech LLMs
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-2">
-                <span className="font-medium">ACL ARR July 2025 (Under Review)</span> | <a href="https://openreview.net/forum?id=CUXfIv07j5" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">OpenReview</a>
+                <span className="font-medium">EACL 2026</span> | <a href="https://openreview.net/forum?id=CUXfIv07j5" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">OpenReview</a>
               </p>
               <p className="text-gray-500 dark:text-gray-400 text-sm">
                 Open-source benchmark across 20 African languages and 100+ African English accents, evaluating multimodal speech LLMs vs traditional ASR/AST models.
@@ -273,14 +289,14 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
               className="border-l-4 border-red-600 pl-6 py-4"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Neural Audio Codec Evaluation for Low-Resource African Languages
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-2">
-                <span className="font-medium">ICASSP 2026 (Under Review)</span> | <span className="font-semibold">Chibuzor Okocha</span>, et al.
+                <span className="font-medium">Interspeech 2026 (Under Review)</span> | <span className="font-semibold">Chibuzor Okocha</span>, et al.
               </p>
               <p className="text-gray-500 dark:text-gray-400 text-sm">
                 Comprehensive evaluation framework for neural audio codecs on African speech data and low-resource language settings.
@@ -290,14 +306,14 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
               className="border-l-4 border-orange-600 pl-6 py-4"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Can large audio language models understand child stuttering speech?
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-2">
-                <span className="font-medium">ICASSP 2026 (Under Review)</span> | <span className="font-semibold">Chibuzor Okocha</span>, Maya Bakri, Christan Grant | <a href="https://arxiv.org/abs/2510.20850" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">arXiv</a>
+                <span className="font-medium">ASRU 2025 Workshop on Childspeech (Best Paper Award)</span> | <span className="font-semibold">Chibuzor Okocha</span>, Maya Bakri, Christan Grant | <a href="https://arxiv.org/abs/2510.20850" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">arXiv</a>
               </p>
               <p className="text-gray-500 dark:text-gray-400 text-sm">
                 Evaluating LALMs on disfluent child speech for source separation and summarization tasks.
@@ -307,7 +323,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
               className="border-l-4 border-indigo-600 pl-6 py-4"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
