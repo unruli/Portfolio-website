@@ -149,6 +149,35 @@ export default function Home() {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
+                    <span className="text-green-500 text-lg">✅</span>
+                    <div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[September 2026]</span>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">
+                        Excited to share that I have <span className="font-semibold">2 papers accepted</span> to IEEE SLT 2026!
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-3">
+                    <span className="text-purple-500 text-lg">🎤</span>
+                    <div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[September 2026]</span>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">
+                        Busy month! Gave a workshop talk at the <span className="font-semibold">ACM Tapia</span> conference and had a paper accepted to <span className="font-semibold">Interspeech</span>.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-3">
+                    <span className="text-blue-500 text-lg">💼</span>
+                    <div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[August 2026]</span>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">
+                        Successfully completed my summer research internship at the <span className="font-semibold">Adobe Speech AI lab</span> in San Francisco, capping it off with a talk to the CAVA group!
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
                     <span className="text-purple-500 text-lg">🏆</span>
                     <div>
                       <span className="text-sm text-gray-500 dark:text-gray-400">[2025]</span>
@@ -311,13 +340,47 @@ export default function Home() {
               className="border-l-4 border-red-600 pl-6 py-4"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Neural Audio Codec Evaluation for Low-Resource African Languages
+                How Robust Are Neural Audio Codecs for African Speech? A Multi-Task Benchmark and the Limits of Perceptual Quality
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-2">
-                <span className="font-medium">Interspeech 2026 (Under Review)</span> | <span className="font-semibold">Chibuzor Okocha</span>, et al.
+                <span className="font-medium">IEEE SLT 2026</span> | <span className="font-semibold">Chibuzor Okocha</span>, Christan Earl Grant
               </p>
               <p className="text-gray-500 dark:text-gray-400 text-sm">
                 Comprehensive evaluation framework for neural audio codecs on African speech data and low-resource language settings.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.35 }}
+              className="border-l-4 border-teal-600 pl-6 py-4"
+            >
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                Beyond Word Error Rate: A Switch-Aware Evaluation of ASR and Audio Language Models on English–Yoruba Code-Switched Speech
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-2">
+                <span className="font-medium">IEEE SLT 2026</span> | <span className="font-semibold">Chibuzor Okocha</span>, Christan Earl Grant
+              </p>
+              <p className="text-gray-500 dark:text-gray-400 text-sm">
+                An evaluation of ASR and Audio Language Models on English-Yoruba code-switched speech, moving beyond traditional WER metrics.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.38 }}
+              className="border-l-4 border-yellow-600 pl-6 py-4"
+            >
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                Reasoning Beyond Transcription: Audio Language Models on Child Stuttering Speech
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-2">
+                <span className="font-medium">Interspeech 2026</span> | <span className="font-semibold">Chibuzor Okocha</span>
+              </p>
+              <p className="text-gray-500 dark:text-gray-400 text-sm">
+                Exploring reasoning capabilities and cognitive processes in audio language models applied to child stuttering speech.
               </p>
             </motion.div>
 

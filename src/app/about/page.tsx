@@ -6,7 +6,8 @@ import {
   AcademicCapIcon,
   BriefcaseIcon,
   UserGroupIcon,
-  DocumentTextIcon
+  DocumentTextIcon,
+  MicrophoneIcon
 } from '@heroicons/react/24/outline'
 
 const education = [
@@ -38,6 +39,12 @@ const education = [
 
 const experience = [
   {
+    title: 'Research Intern - Speech AI Lab',
+    institution: 'Adobe (San Francisco, CA)',
+    period: 'May 2026 - August 2026',
+    description: 'Conducted research in speech AI and presented findings to the Adobe research CAVA group.',
+  },
+  {
     title: 'Graduate Research Assistant',
     institution: 'University of Florida - Engineering Education',
     period: '2023 - Present',
@@ -48,6 +55,38 @@ const experience = [
     institution: 'University of Florida',
     period: '2022 - 2023',
     description: 'Assisted with undergraduate engineering courses, developed educational materials, and mentored students in research projects',
+  },
+]
+
+const service = [
+  {
+    role: 'Reviewer',
+    organization: 'NeurIPS',
+  },
+  {
+    role: 'Reviewer',
+    organization: 'ECCV',
+  },
+  {
+    role: 'Reviewer',
+    organization: 'ACL',
+  },
+  {
+    role: 'Reviewer',
+    organization: 'ACM Tapia Conference',
+  },
+]
+
+const talks = [
+  {
+    title: 'Workshop Talk',
+    venue: 'ACM Tapia Conference',
+    date: 'September 2026',
+  },
+  {
+    title: 'Research Talk',
+    venue: 'Adobe Research (CAVA Group)',
+    date: 'August 2026',
   },
 ]
 
@@ -147,6 +186,60 @@ export default function About() {
             ))}
           </div>
         </section>
+
+        {/* Service & Talks Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          {/* Service Section */}
+          <section>
+            <div className="flex items-center mb-8">
+              <UserGroupIcon className="h-8 w-8 text-white mr-2" />
+              <h2 className="text-2xl font-bold text-white">
+                Service & Reviewing
+              </h2>
+            </div>
+            <div className="space-y-4">
+              {service.map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="bg-white dark:bg-gray-900 p-4 rounded-lg shadow-lg flex justify-between items-center"
+                >
+                  <span className="font-semibold text-gray-900 dark:text-white">{item.organization}</span>
+                  <span className="text-sm text-gray-500 dark:text-gray-400">{item.role}</span>
+                </motion.div>
+              ))}
+            </div>
+          </section>
+
+          {/* Talks Section */}
+          <section>
+            <div className="flex items-center mb-8">
+              <MicrophoneIcon className="h-8 w-8 text-white mr-2" />
+              <h2 className="text-2xl font-bold text-white">
+                Invited Talks
+              </h2>
+            </div>
+            <div className="space-y-4">
+              {talks.map((talk, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="bg-white dark:bg-gray-900 p-4 rounded-lg shadow-lg"
+                >
+                  <h3 className="font-semibold text-gray-900 dark:text-white mb-1">{talk.title}</h3>
+                  <div className="flex justify-between items-center text-sm">
+                    <span className="text-gray-600 dark:text-gray-300">{talk.venue}</span>
+                    <span className="text-gray-500 dark:text-gray-400">{talk.date}</span>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </section>
+        </div>
 
         {/* Skills Section */}
         <section>
