@@ -78,7 +78,7 @@ export default function Home() {
                 </h1>
                 <div className="space-y-1">
                   <p className="text-lg text-gray-700 dark:text-gray-300">
-                    I am a PhD student in Engineering with a minor in Computer Science at the University of Florida, where I am privileged to be a member of the <a 
+                    I am a PhD student in Computer Science at the University of Florida, where I am privileged to be a member of the <a 
                       href="https://ufdatastudio.com/" 
                       target="_blank" 
                       rel="noopener noreferrer"
