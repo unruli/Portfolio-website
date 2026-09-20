@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Chibuzor Okocha - PhD Student',
-  description: 'PhD student in Engineering Education at University of Florida. Research in Speech and Audio AI, reasoning in Audio Language Models, and accented multilingual speech processing.',
+  description: 'PhD student in Engineering at University of Florida. Research in Speech and Audio AI, reasoning in Audio Language Models, and accented multilingual speech processing.',
 }
 
 export default function RootLayout({

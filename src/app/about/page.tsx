@@ -12,7 +12,7 @@ import {
 
 const education = [
   {
-    degree: 'PhD in Engineering Education',
+    degree: 'PhD in Engineering',
     institution: 'University of Florida',
     status: 'In Progress',
     description: 'Research focus on Speech and Audio AI, reasoning in Audio Language Models, accented and multilingual speech recognition systems',
@@ -24,10 +24,10 @@ const education = [
     description: 'Complementary studies in computer science with focus on AI and speech processing',
   },
   {
-    degree: 'Master of Science in Engineering Education',
+    degree: 'Master of Science in Engineering',
     institution: 'University of Florida',
     status: 'August 2025',
-    description: 'Thesis research on educational technology and AI in engineering education',
+    description: 'Thesis research on AI and speech processing',
   },
   {
     degree: 'Bachelor of Science in Computer Engineering',
@@ -46,7 +46,7 @@ const experience = [
   },
   {
     title: 'Graduate Research Assistant',
-    institution: 'University of Florida - Engineering Education',
+    institution: 'University of Florida - Engineering',
     period: '2023 - Present',
     description: 'Conducting research on Speech and Audio AI, developing reasoning capabilities in Audio Language Models, and creating robust systems for accented and multilingual speech processing',
   },
@@ -115,7 +115,7 @@ export default function About() {
             About Me
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            I am a PhD student in Engineering Education with a minor in Computer Science at the University of Florida. My research focuses on Speech and Audio AI, reasoning in Audio Language Models, and developing robust systems for accented and multilingual speech processing.
+            I am a PhD student in Engineering with a minor in Computer Science at the University of Florida. My research focuses on Speech and Audio AI, reasoning in Audio Language Models, and developing robust systems for accented and multilingual speech processing.
           </p>
         </motion.div>
 

@@ -227,15 +227,7 @@ export default function Home() {
                     </div>
                   </div>
                   
-                  <div className="flex items-start space-x-3">
-                    <span className="text-blue-500 text-lg">🔬</span>
-                    <div>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">[Oct 24]</span>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Presented research on intercultural understanding at <span className="font-semibold">FIE 2024</span> conference.
-                      </p>
-                    </div>
-                  </div>
+
                 </div>
               </div>
             </motion.div>

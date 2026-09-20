@@ -41,27 +41,7 @@ const publications = [
     type: 'workshop',
     abstract: 'Medical voice dictation and scribe services have boosted productivity in high-resource settings for decades. Yet they remain virtually absent in low-and-middle-income countries (LMICs), where healthcare systems face physician shortages and heavier patient loads but rely on outdated, paper-based workflows. While voice input is typically considered a suitable alternative that alleviates the additional cognitive burden from keyboard-based data entry, studies in high-resource settings report mixed findings on its efficiency. This study evaluates whether those findings hold true in LMIC contexts. We assessed typing and dictation speeds among over 1,000 clinicians and health workers across 15+ LMICs. Results reveal a median keyboard speed of just 21.4 words per minute (wpm), in contrast to dictation speeds that are 4–5x faster on average (median 93 wpm). This speed improvement highlights the potential of automatic speech recognition (ASR) to reduce documentation burdens, improve workflow efficiency, and transform clinician experiences, and reinforcing the need to integrate voice solutions into LMIC digital health strategies.',
   },
-  {
-    id: 4,
-    title: 'Navigating Unfamiliar Waters: Enhancing Intercultural Understanding and Academic Self-Efficacy Among Computer Science Students in Japan',
-    authors: 'Chibuzor J. Okocha, Jeremiah J. Blanchard, Gloria J. Kim, Mariko Adachi',
-    venue: 'IEEE Frontiers in Education Conference (FIE)',
-    year: '2024',
-    type: 'conference',
-    abstract: 'Global collaborations have expanded the importance of effective cross-cultural communication in engineering disciplines, with self-efficacy playing a crucial role in developing these skills. This work-in-progress innovative practice paper is a quantitative component of a mixed-method exploratory study investigating the experiences of fifteen computing students from the University of Florida who participated in a nine-week summer study abroad program at Kyoto University, Japan, in 2022. The research aimed to assess the enhancement of cross-cultural engineering self-efficacy and the evolution of students\' intercultural understanding. Surveys were conducted at the program\'s inception and conclusion, allowing for a detailed analysis of students\' self-perceived academic capabilities and intercultural awareness over time. Preliminary statistical analysis suggests an increase in students\' self-efficacy in cross-cultural engineering by the end of the program, highlighting the impact of the study abroad experience on broadening students\' perspectives and enhancing their adaptability in intercultural interactions.',
-    pdf: 'https://doi.org/10.1109/FIE61694.2024.10893074',
-    status: 'WIP',
-  },
-  {
-    id: 5,
-    title: 'Microelectronics Research and Global Competencies: Unpacking Research Abroad Experiences of Engineering Students',
-    authors: 'Chibuzor J. Okocha, Gloria J. Kim, Jae Wan Choi, Yong-Kyu Yoon',
-    venue: 'ASEE Annual Conference & Exposition',
-    year: '2024',
-    type: 'conference',
-    abstract: 'Global competencies are essential for engineering students in today\'s globalized world. This work investigates this aspect of an International Research Experience for Students (IRES) program funded by the National Science Foundation (NSF). The NSF IRES: Interdisciplinary Research in Korea on Applied Smart Systems (IRiKA) recruited both undergraduate and graduate students with diverse backgrounds from four public and private US universities. Due to the constraints of the grant, only US citizens and permanent residents were eligible to apply. Over the duration of the grant, three cohorts were deployed. Due to the pandemic, the program did not run in 2020 and 2022. In all, 18 participants engaged in an 8-week research internship as part of the IRiKA program. This study focuses on the experience of the 2023 cohort - specifically, a subset of the 2023 cohort that worked on microelectronics device projects. This study employed a qualitative methods approach anchored in the PISA 2018 Global Competence theoretical framework. By analyzing qualitative data from weekly blog post reflections and student interviews, this work aims to unpack the complex ways global competencies are cultivated among undergraduate and graduate engineering students with varying degrees of prior research experience. The findings of this research are expected to inform future engineering education practices, providing valuable insights for educators, policymakers, and institutions aiming to enhance the global competencies of their students through international research collaborations.',
-    pdf: 'https://doi.org/10.18260/1-2--47777',
-  },
+
   {
     id: 6,
     title: 'How Robust Are Neural Audio Codecs for African Speech? A Multi-Task Benchmark and the Limits of Perceptual Quality',
