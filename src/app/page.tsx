@@ -285,7 +285,7 @@ export default function Home() {
                 Afrispeech Semantics: Evaluating Audio–Semantic Reasoning in Spoken Language Models Across Domains and Accents
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-2">
-                <span className="font-medium">ACL 2026 (Under Review)</span> | <span className="font-semibold">Chibuzor Okocha</span>, et al.
+                <span className="font-medium">Presented in San Diego, July 2026</span> | <span className="font-semibold">Chibuzor Okocha</span>, et al.
               </p>
               <p className="text-gray-500 dark:text-gray-400 text-sm">
                 Evaluating audio-semantic reasoning capabilities of spoken language models across different domains and African accents.
