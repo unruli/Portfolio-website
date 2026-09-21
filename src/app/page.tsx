@@ -44,7 +44,12 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section id="hero" className="py-16 bg-white dark:bg-gray-900">
+      <section id="hero" className="relative py-20 lg:py-32 overflow-hidden">
+        {/* Background Decorative Gradients */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+          <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-blue-400/20 dark:bg-blue-900/20 blur-[100px]" />
+          <div className="absolute top-[20%] -right-[10%] w-[40%] h-[40%] rounded-full bg-purple-400/20 dark:bg-purple-900/20 blur-[100px]" />
+        </div>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
             {/* Profile Image */}
@@ -73,10 +78,10 @@ export default function Home() {
               className="lg:col-span-3 space-y-6"
             >
               <div className="space-y-3">
-                <h1 className="text-3xl lg:text-4xl font-serif font-bold text-gray-900 dark:text-white">
+                <h1 className="text-4xl lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white">
                   Chibuzor Okocha
                 </h1>
-                <div className="space-y-1">
+                <div className="space-y-2 pt-2">
                   <p className="text-lg text-gray-700 dark:text-gray-300">
                     I am a PhD student in Computer Science at the University of Florida and a member of the <a 
                       href="https://ufdatastudio.com/" 
@@ -143,8 +148,8 @@ export default function Home() {
               </div>
 
               {/* Recent News */}
-              <div className="pt-6">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+              <div className="pt-8">
+                <h3 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-6">
                   Recent News
                 </h3>
                 <div className="space-y-3">
@@ -236,9 +241,9 @@ export default function Home() {
       </section>
 
       {/* Research Areas */}
-      <section id="research" className="py-12 bg-gray-50 dark:bg-gray-800">
+      <section id="research" className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white mb-8">
             Research Areas
           </h2>
           
@@ -249,7 +254,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm border-l-4 border-blue-600"
+                className="glass p-6 rounded-2xl shadow-sm border-t-4 border-t-blue-500 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
               >
                 <div className="flex items-start space-x-4">
                   <interest.icon className="h-6 w-6 text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" />
@@ -269,17 +274,17 @@ export default function Home() {
       </section>
 
       {/* Recent Publications Section */}
-      <section id="publications" className="py-12 bg-white dark:bg-gray-900">
+      <section id="publications" className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white mb-8">
             Recent Publications
           </h2>
-          <div className="space-y-4">
+          <div className="grid gap-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="border-l-4 border-purple-600 pl-6 py-4"
+              className="glass p-6 rounded-2xl border-l-4 border-l-purple-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Afrispeech Semantics: Evaluating Audio–Semantic Reasoning in Spoken Language Models Across Domains and Accents
@@ -295,7 +300,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="border-l-4 border-blue-600 pl-6 py-4"
+              className="glass p-6 rounded-2xl border-l-4 border-l-blue-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Afrispeech-Dialog: A Benchmark Dataset for Spontaneous English Conversations in Healthcare and Beyond
@@ -312,7 +317,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="border-l-4 border-green-600 pl-6 py-4"
+              className="glass p-6 rounded-2xl border-l-4 border-l-green-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 AfriVox: Probing Multilingual and Accent Robustness of Speech LLMs
@@ -329,7 +334,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="border-l-4 border-red-600 pl-6 py-4"
+              className="glass p-6 rounded-2xl border-l-4 border-l-red-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 How Robust Are Neural Audio Codecs for African Speech? A Multi-Task Benchmark and the Limits of Perceptual Quality
@@ -346,7 +351,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.35 }}
-              className="border-l-4 border-teal-600 pl-6 py-4"
+              className="glass p-6 rounded-2xl border-l-4 border-l-teal-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Beyond Word Error Rate: A Switch-Aware Evaluation of ASR and Audio Language Models on English–Yoruba Code-Switched Speech
@@ -363,7 +368,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.38 }}
-              className="border-l-4 border-yellow-600 pl-6 py-4"
+              className="glass p-6 rounded-2xl border-l-4 border-l-yellow-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Reasoning Beyond Transcription: Audio Language Models on Child Stuttering Speech
@@ -380,7 +385,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="border-l-4 border-orange-600 pl-6 py-4"
+              className="glass p-6 rounded-2xl border-l-4 border-l-orange-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Can large audio language models understand child stuttering speech?
@@ -397,7 +402,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="border-l-4 border-indigo-600 pl-6 py-4"
+              className="glass p-6 rounded-2xl border-l-4 border-l-indigo-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Domain-Aware Speaker Diarization On African-Accented English
@@ -423,9 +428,9 @@ export default function Home() {
       </section>
 
       {/* Featured Projects Section */}
-      <section id="projects" className="py-12 bg-gray-50 dark:bg-gray-800">
+      <section id="projects" className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-serif font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white mb-8">
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
