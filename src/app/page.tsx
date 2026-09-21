@@ -44,12 +44,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section id="hero" className="relative py-20 lg:py-32 overflow-hidden">
-        {/* Background Decorative Gradients */}
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
-          <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-blue-400/20 dark:bg-blue-900/20 blur-[100px]" />
-          <div className="absolute top-[20%] -right-[10%] w-[40%] h-[40%] rounded-full bg-purple-400/20 dark:bg-purple-900/20 blur-[100px]" />
-        </div>
+      <section id="hero" className="relative py-20 lg:py-32">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
             {/* Profile Image */}
@@ -254,7 +249,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="glass p-6 rounded-2xl shadow-sm border-t-4 border-t-blue-500 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+                className="bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-800 p-6 rounded-2xl shadow-sm border-t-4 border-t-blue-500 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
               >
                 <div className="flex items-start space-x-4">
                   <interest.icon className="h-6 w-6 text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" />
@@ -284,7 +279,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="glass p-6 rounded-2xl border-l-4 border-l-purple-500 hover:shadow-lg transition-shadow duration-300"
+              className="bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-800 p-6 rounded-2xl border-l-4 border-l-purple-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Afrispeech Semantics: Evaluating Audio–Semantic Reasoning in Spoken Language Models Across Domains and Accents
@@ -300,7 +295,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="glass p-6 rounded-2xl border-l-4 border-l-blue-500 hover:shadow-lg transition-shadow duration-300"
+              className="bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-800 p-6 rounded-2xl border-l-4 border-l-blue-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Afrispeech-Dialog: A Benchmark Dataset for Spontaneous English Conversations in Healthcare and Beyond
@@ -317,7 +312,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="glass p-6 rounded-2xl border-l-4 border-l-green-500 hover:shadow-lg transition-shadow duration-300"
+              className="bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-800 p-6 rounded-2xl border-l-4 border-l-green-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 AfriVox: Probing Multilingual and Accent Robustness of Speech LLMs
@@ -334,7 +329,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="glass p-6 rounded-2xl border-l-4 border-l-red-500 hover:shadow-lg transition-shadow duration-300"
+              className="bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-800 p-6 rounded-2xl border-l-4 border-l-red-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 How Robust Are Neural Audio Codecs for African Speech? A Multi-Task Benchmark and the Limits of Perceptual Quality
@@ -351,7 +346,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.35 }}
-              className="glass p-6 rounded-2xl border-l-4 border-l-teal-500 hover:shadow-lg transition-shadow duration-300"
+              className="bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-800 p-6 rounded-2xl border-l-4 border-l-teal-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Beyond Word Error Rate: A Switch-Aware Evaluation of ASR and Audio Language Models on English–Yoruba Code-Switched Speech
@@ -368,7 +363,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.38 }}
-              className="glass p-6 rounded-2xl border-l-4 border-l-yellow-500 hover:shadow-lg transition-shadow duration-300"
+              className="bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-800 p-6 rounded-2xl border-l-4 border-l-yellow-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Reasoning Beyond Transcription: Audio Language Models on Child Stuttering Speech
@@ -385,7 +380,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="glass p-6 rounded-2xl border-l-4 border-l-orange-500 hover:shadow-lg transition-shadow duration-300"
+              className="bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-800 p-6 rounded-2xl border-l-4 border-l-orange-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Can large audio language models understand child stuttering speech?
@@ -402,7 +397,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="glass p-6 rounded-2xl border-l-4 border-l-indigo-500 hover:shadow-lg transition-shadow duration-300"
+              className="bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-800 p-6 rounded-2xl border-l-4 border-l-indigo-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Domain-Aware Speaker Diarization On African-Accented English
@@ -422,91 +417,6 @@ export default function Home() {
               className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
             >
               View All Publications →
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Projects Section */}
-      <section id="projects" className="py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white mb-8">
-            Featured Projects
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-            >
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                AfriSpeech-200
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Pan-African speech dataset with 100+ accents and 196+ hours of audio for ASR research.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-3 py-1 text-sm bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full">
-                  Speech Processing
-                </span>
-                <span className="px-3 py-1 text-sm bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full">
-                  ASR
-                </span>
-              </div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-            >
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                CodecEval-Africa
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Neural audio codecs evaluation framework for low-resource African language settings.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-3 py-1 text-sm bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full">
-                  Neural Codecs
-                </span>
-                <span className="px-3 py-1 text-sm bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full">
-                  Low-Resource
-                </span>
-              </div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-            >
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Child Speech Analysis with LALMs
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Large Audio Language Models for child interview summarization and speaker separation.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-3 py-1 text-sm bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full">
-                  LALMs
-                </span>
-                <span className="px-3 py-1 text-sm bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full">
-                  Child Speech
-                </span>
-              </div>
-            </motion.div>
-          </div>
-          
-          <div className="text-center mt-8">
-            <a 
-              href="/projects" 
-              className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
-            >
-              View All Projects →
             </a>
           </div>
         </div>

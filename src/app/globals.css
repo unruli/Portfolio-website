@@ -20,18 +20,6 @@ body {
   min-height: 100vh;
 }
 
-/* Glassmorphism utilities */
-.glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.dark .glass {
-  background: rgba(17, 24, 39, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
@@ -58,7 +46,7 @@ html {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-outfit), sans-serif;
+  font-family: var(--font-lora), serif;
 }
 
 body {
