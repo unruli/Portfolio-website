@@ -114,9 +114,14 @@ export default function About() {
           <h1 className="text-4xl font-bold text-white mb-4">
             About Me
           </h1>
-          <p className="text-xl text-white max-w-3xl mx-auto">
-            I am a PhD student in Computer Science at the University of Florida. My research focuses on Speech and Audio AI, reasoning in Audio Language Models, and developing robust systems for accented and multilingual speech processing.
-          </p>
+          <div className="text-xl text-white max-w-3xl mx-auto space-y-4">
+            <p>
+              I am a PhD student in Computer Science at the University of Florida, specializing in Speech and Audio AI. I have deep expertise in <span className="font-semibold">training multimodal and tool-calling audio models</span>, as well as advancing reasoning capabilities in Audio Language Models.
+            </p>
+            <p className="font-semibold text-blue-300">
+              I am actively seeking full-time opportunities and am open to Research Scientist roles in Speech and Audio AI.
+            </p>
+          </div>
         </motion.div>
 
         {/* Education Section */}

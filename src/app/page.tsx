@@ -78,25 +78,25 @@ export default function Home() {
                 </h1>
                 <div className="space-y-1">
                   <p className="text-lg text-gray-700 dark:text-gray-300">
-                    I am a PhD student in Computer Science at the University of Florida, where I am privileged to be a member of the <a 
+                    I am a PhD student in Computer Science at the University of Florida and a member of the <a 
                       href="https://ufdatastudio.com/" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                      className="text-blue-600 dark:text-blue-400 hover:underline font-semibold"
                     >
                       UF DataStudio Lab
-                    </a>. Previously, I worked on building speech and audio models for African languages and accents.
+                    </a>. I am currently on the job market and <span className="font-semibold text-blue-600 dark:text-blue-400">open to Research Scientist roles in Speech and Audio AI</span>.
                   </p>
                 </div>
               </div>
 
               <div className="space-y-4">
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  My research is focused on Speech and Audio AI, reasoning in Audio Language Models, and developing robust systems for accented and multilingual speech processing. I am passionate about creating inclusive AI systems that work across multiple languages and cultures.
+                  My research centers on <span className="font-medium text-gray-900 dark:text-white">Speech and Audio AI</span>, with extensive experience in <span className="font-medium text-gray-900 dark:text-white">training multimodal and tool-calling audio models</span>. I focus on advancing the reasoning capabilities of Audio Language Models and developing robust, inclusive systems for accented and multilingual speech processing.
                 </p>
                 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Beyond research, I am passionate about mentoring aspiring AI researchers, building open science communities, and contributing to collaborative initiatives. I firmly believe in democratizing access to knowledge and fostering collaborative ecosystems.
+                  I am passionate about building open science communities, mentoring aspiring AI researchers, and democratizing access to cutting-edge speech technology across diverse languages and cultures.
                 </p>
               </div>
 
