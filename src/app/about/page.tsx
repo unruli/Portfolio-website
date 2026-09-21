@@ -18,12 +18,7 @@ const education = [
     status: 'In Progress',
     description: 'Research focus on Speech and Audio AI, reasoning in Audio Language Models, accented and multilingual speech recognition systems',
   },
-  {
-    degree: 'PhD Minor in Computer Science',
-    institution: 'University of Florida',
-    status: 'In Progress',
-    description: 'Complementary studies in computer science with focus on AI and speech processing',
-  },
+
   {
     degree: 'Master of Science in Computer Science',
     institution: 'University of Florida',
