@@ -1,6 +1,7 @@
 'use client'
 
 import * as React from 'react'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { 
   AcademicCapIcon,
@@ -82,6 +83,7 @@ const talks = [
     title: 'Workshop Talk',
     venue: 'ACM Tapia Conference',
     date: 'September 2026',
+    badge: '/tapia-speaker-badge.png',
   },
   {
     title: 'Research Talk',
@@ -236,10 +238,21 @@ export default function About() {
                   className="bg-white dark:bg-gray-900 p-4 rounded-lg shadow-lg"
                 >
                   <h3 className="font-semibold text-gray-900 dark:text-white mb-1">{talk.title}</h3>
-                  <div className="flex justify-between items-center text-sm">
+                  <div className="flex justify-between items-center text-sm mb-3">
                     <span className="text-gray-600 dark:text-gray-300">{talk.venue}</span>
                     <span className="text-gray-500 dark:text-gray-400">{talk.date}</span>
                   </div>
+                  {talk.badge && (
+                    <div className="mt-2 flex justify-center">
+                      <Image 
+                        src={talk.badge} 
+                        alt={`${talk.venue} Speaker Badge`} 
+                        width={400} 
+                        height={210} 
+                        className="rounded-md shadow-sm border border-gray-200 dark:border-gray-700 object-contain"
+                      />
+                    </div>
+                  )}
                 </motion.div>
               ))}
             </div>
