@@ -5,14 +5,14 @@ import { Cpu, Layers, Radio, Sparkles } from "lucide-react";
 
 export const ModelLandscapeSection: React.FC = () => {
   const endToEndALMs = [
-    { name: "Audio Flamingo 3", provider: "ByteDance / NV", focus: "Multimodal Audio-LM" },
-    { name: "Audio Flamingo 2", provider: "ByteDance / NV", focus: "Multimodal Audio-LM" },
+    { name: "Audio Flamingo 3", provider: "NVIDIA Research", focus: "Multimodal Audio-LM" },
+    { name: "Audio Flamingo 2", provider: "NVIDIA Research", focus: "Multimodal Audio-LM" },
     { name: "Kimi-Audio", provider: "Moonshot AI", focus: "Native Audio LM" },
-    { name: "Qwen2.5-Omni", provider: "Alibaba Cloud", focus: "Omni Speech-Text LM" },
-    { name: "Qwen2-Audio", provider: "Alibaba Cloud", focus: "Speech LM" },
+    { name: "Qwen2.5-Omni", provider: "Alibaba Qwen", focus: "Omni Speech-Text LM" },
+    { name: "Qwen2-Audio", provider: "Alibaba Qwen", focus: "Speech LM" },
     { name: "SALMONN", provider: "Tsinghua / ByteDance", focus: "Speech-Audio LM" },
-    { name: "GAMA", provider: "Research", focus: "General Audio LM" },
-    { name: "LTU", provider: "MIT", focus: "Listen-Think-Understand" },
+    { name: "GAMA", provider: "UMD / Speech Lab", focus: "General Audio LM" },
+    { name: "LTU", provider: "MIT CSAIL", focus: "Listen-Think-Understand" },
   ];
 
   const cascadedASR = [
