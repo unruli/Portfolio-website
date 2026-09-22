@@ -14,6 +14,7 @@ import { ReasoningDifficultySection } from "@/components/interspeech/ReasoningDi
 import { DisfluencyStressTestSection } from "@/components/interspeech/DisfluencyStressTestSection";
 import { FailureExplorerSection } from "@/components/interspeech/FailureExplorerSection";
 import { SummarizationSection } from "@/components/interspeech/SummarizationSection";
+import { FutureDirectionsSection } from "@/components/interspeech/FutureDirectionsSection";
 import { TakeawaysSection } from "@/components/interspeech/TakeawaysSection";
 import { CitationFooterSection } from "@/components/interspeech/CitationFooterSection";
 
@@ -57,6 +58,7 @@ export default function ReasoningBeyondTranscriptionPage() {
       <DisfluencyStressTestSection />
       <FailureExplorerSection />
       <SummarizationSection />
+      <FutureDirectionsSection />
       <TakeawaysSection />
       <CitationFooterSection />
     </main>
