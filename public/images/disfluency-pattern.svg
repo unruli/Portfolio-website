@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" fill="none">
+  <rect width="800" height="200" fill="#030712" rx="12"/>
+  <path d="M 0 100 Q 50 100, 100 60 T 200 140 T 300 100" stroke="#38bdf8" stroke-width="2"/>
+  <rect x="300" y="40" width="100" height="120" rx="6" fill="#7f1d1d" fill-opacity="0.3" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="350" y="30" fill="#fca5a5" font-family="sans-serif" font-size="12" text-anchor="middle">Prolongation / Block</text>
+  <path d="M 300 100 Q 325 30, 350 170 T 400 100" stroke="#ef4444" stroke-width="3"/>
+  <rect x="420" y="40" width="120" height="120" rx="6" fill="#1e1b4b" fill-opacity="0.5" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="480" y="30" fill="#c7d2fe" font-family="sans-serif" font-size="12" text-anchor="middle">Repetition</text>
+  <path d="M 420 100 L 440 60 L 460 140 L 480 60 L 500 140 L 520 60 L 540 100" stroke="#818cf8" stroke-width="2"/>
+  <path d="M 540 100 Q 640 100, 700 70 T 800 100" stroke="#38bdf8" stroke-width="2"/>
+</svg>

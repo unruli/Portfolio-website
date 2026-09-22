@@ -87,12 +87,13 @@ const publications = [
   {
     id: 10,
     title: 'Reasoning Beyond Transcription: Audio Language Models on Child Stuttering Speech',
-    authors: 'Chibuzor Okocha',
+    authors: 'Chibuzor Okocha, Christan Grant, Zoey Liu',
     venue: 'Interspeech',
     year: '2026',
     type: 'conference',
-    abstract: 'Exploring reasoning capabilities and cognitive processes in audio language models applied to child stuttering speech.',
-    status: 'Accepted',
+    abstract: 'Can modern audio-language models directly understand and reason over child speech when the speech is disfluent, mixed with adult speech, and not first converted into a clean transcript? We introduce a diagnostic benchmark evaluating Audio Language Models (ALMs) and ASR + LLM cascades on child stuttering speech.',
+    projectPage: '/reasoning-beyond-transcription',
+    status: 'Interspeech 2026',
   },
   // Add more publications as needed
 ]
@@ -184,7 +185,15 @@ export default function Publications() {
                     {pub.venue} ({pub.year})
                   </p>
                 </div>
-                <div className="flex space-x-2">
+                <div className="flex items-center space-x-3">
+                  {pub.projectPage && (
+                    <a
+                      href={pub.projectPage}
+                      className="px-2.5 py-1 text-xs font-mono font-medium rounded bg-cyan-950 text-cyan-300 border border-cyan-800 hover:bg-cyan-900 transition-colors flex items-center gap-1"
+                    >
+                      Project Page &rarr;
+                    </a>
+                  )}
                   {pub.pdf && (
                     <a
                       href={pub.pdf}
