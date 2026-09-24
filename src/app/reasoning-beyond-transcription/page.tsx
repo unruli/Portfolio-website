@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import { paperMetadata } from "@/data/paperData";
 import { NavigationHeader } from "@/components/interspeech/NavigationHeader";
 import { HeroSection } from "@/components/interspeech/HeroSection";
 import { ProblemSection } from "@/components/interspeech/ProblemSection";

@@ -2,19 +2,11 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FileText, Code, Presentation, Quote, ChevronDown, Check, Sparkles, ExternalLink } from "lucide-react";
+import { FileText, Code, Quote, ChevronDown, Check, Sparkles, ExternalLink } from "lucide-react";
 import { paperMetadata } from "@/data/paperData";
-import { LinkedInShareModal } from "./LinkedInShareModal";
-
-const LinkedInIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
-  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
-    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
-  </svg>
-);
 
 export const HeroSection: React.FC = () => {
   const [copiedBibTeX, setCopiedBibTeX] = useState(false);
-  const [isLinkedInModalOpen, setIsLinkedInModalOpen] = useState(false);
 
   const handleCopyBibTeX = () => {
     navigator.clipboard.writeText(paperMetadata.bibtex);
@@ -105,13 +97,6 @@ export const HeroSection: React.FC = () => {
             <span>GitHub Code</span>
           </a>
           <button
-            onClick={() => setIsLinkedInModalOpen(true)}
-            className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-lg bg-blue-950/80 text-blue-300 border border-blue-600/50 hover:bg-blue-900/80 font-mono text-xs font-semibold transition-all shadow-md shadow-blue-950/40"
-          >
-            <LinkedInIcon className="w-4 h-4 text-blue-400" />
-            <span>Post on LinkedIn</span>
-          </button>
-          <button
             onClick={handleCopyBibTeX}
             className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-lg bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-700 font-mono text-xs transition-all"
           >
@@ -128,12 +113,6 @@ export const HeroSection: React.FC = () => {
             )}
           </button>
         </div>
-
-        {/* Modal Component */}
-        <LinkedInShareModal
-          isOpen={isLinkedInModalOpen}
-          onClose={() => setIsLinkedInModalOpen(false)}
-        />
 
         {/* Visual Centerpiece: Scientific Pipeline Diagram */}
         <div className="relative rounded-2xl bg-slate-950/80 border border-slate-800/80 p-6 sm:p-8 shadow-2xl backdrop-blur-xl max-w-5xl mx-auto overflow-hidden">

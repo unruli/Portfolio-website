@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { ArrowLeft, BookOpen, Code, FileText, ChevronRight } from "lucide-react";
+import { ArrowLeft, Code, FileText } from "lucide-react";
 import { paperMetadata } from "@/data/paperData";
 
 export const NavigationHeader: React.FC = () => {

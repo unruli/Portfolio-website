@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Copy, Check, FileText, Code, Presentation, ExternalLink, ShieldCheck } from "lucide-react";
+import { Copy, Check, FileText, Code, ExternalLink, ShieldCheck } from "lucide-react";
 import { paperMetadata } from "@/data/paperData";
 
 export const CitationFooterSection: React.FC = () => {
