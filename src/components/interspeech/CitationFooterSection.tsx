@@ -34,11 +34,13 @@ export const CitationFooterSection: React.FC = () => {
             <div className="space-y-2 font-mono text-xs">
               <a
                 href={paperMetadata.links.paper}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-between p-3 rounded-xl bg-slate-950 border border-slate-800 hover:border-cyan-500/60 transition-colors text-slate-200"
               >
                 <div className="flex items-center space-x-2">
                   <FileText className="w-4 h-4 text-cyan-400" />
-                  <span>Download Full Paper (PDF)</span>
+                  <span>Read Paper on arXiv (2609.07968)</span>
                 </div>
                 <ExternalLink className="w-3.5 h-3.5 text-slate-500" />
               </a>
@@ -51,18 +53,7 @@ export const CitationFooterSection: React.FC = () => {
               >
                 <div className="flex items-center space-x-2">
                   <Code className="w-4 h-4 text-cyan-400" />
-                  <span>GitHub Benchmark Code & Data</span>
-                </div>
-                <ExternalLink className="w-3.5 h-3.5 text-slate-500" />
-              </a>
-
-              <a
-                href={paperMetadata.links.poster}
-                className="flex items-center justify-between p-3 rounded-xl bg-slate-950 border border-slate-800 hover:border-cyan-500/60 transition-colors text-slate-200"
-              >
-                <div className="flex items-center space-x-2">
-                  <Presentation className="w-4 h-4 text-indigo-400" />
-                  <span>Interspeech 2026 Poster</span>
+                  <span>GitHub Benchmark Code & Repository</span>
                 </div>
                 <ExternalLink className="w-3.5 h-3.5 text-slate-500" />
               </a>

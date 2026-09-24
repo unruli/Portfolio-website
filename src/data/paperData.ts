@@ -55,16 +55,15 @@ export const paperMetadata: PaperMetadata = {
   abstract:
     "Speech recognition and spoken language understanding systems are predominantly trained and evaluated on fluent adult speech. However, child speech presents distinct acoustic, prosodic, and developmental characteristics, which are further complicated when disfluencies (such as repetitions, prolongations, and blocks) and adult interviewer interference are present. In this work, we present a diagnostic benchmark and stress test evaluating modern Audio Language Models (ALMs) and ASR + LLM cascades directly on child stuttering speech. Rather than assessing simple transcription accuracy, we evaluate end-to-end semantic reasoning through child-focused summarization and child speech entailment tasks.",
   links: {
-    paper: "#", // VERIFY_BEFORE_PUBLICATION
-    code: "https://github.com/unruli/child-stuttering-alm-benchmark", // VERIFY_BEFORE_PUBLICATION
-    poster: "#", // VERIFY_BEFORE_PUBLICATION
+    paper: "https://arxiv.org/abs/2609.07968",
+    code: "https://github.com/ufdatastudio/child-speech-analysis",
+    poster: "#",
     dataset: "https://fluency.talkbank.org/",
   },
-  bibtex: `@inproceedings{okocha2026reasoning,
+  bibtex: `@article{okocha2026reasoning,
   title={Reasoning Beyond Transcription: Audio Language Models on Child Stuttering Speech},
   author={Okocha, Chibuzor and Grant, Christan and Liu, Zoey},
-  booktitle={Proceedings of Interspeech 2026},
-  year={2026},
-  organization={University of Florida}
+  journal={arXiv preprint arXiv:2609.07968},
+  year={2026}
 }`,
 };

@@ -369,11 +369,22 @@ export default function Home() {
                 Reasoning Beyond Transcription: Audio Language Models on Child Stuttering Speech
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-2">
-                <span className="font-medium">Interspeech 2026</span> | <span className="font-semibold">Chibuzor Okocha</span>
+                <span className="font-medium">Interspeech 2026</span> | <span className="font-semibold">Chibuzor Okocha</span>, Christan Grant, Zoey Liu
               </p>
-              <p className="text-gray-500 dark:text-gray-400 text-sm">
-                Exploring reasoning capabilities and cognitive processes in audio language models applied to child stuttering speech.
+              <p className="text-gray-500 dark:text-gray-400 text-sm mb-3">
+                A diagnostic benchmark evaluating Audio Language Models (ALMs) and ASR + LLM cascades on disfluent child speech.
               </p>
+              <div className="flex flex-wrap gap-2 text-xs font-mono">
+                <a href="/reasoning-beyond-transcription" className="px-2.5 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-800 hover:bg-cyan-900 transition-colors">
+                  Project Page &rarr;
+                </a>
+                <a href="https://arxiv.org/abs/2609.07968" target="_blank" rel="noopener noreferrer" className="px-2.5 py-1 rounded bg-red-950/80 text-red-300 border border-red-800/60 hover:bg-red-900 transition-colors">
+                  arXiv:2609.07968
+                </a>
+                <a href="https://github.com/ufdatastudio/child-speech-analysis" target="_blank" rel="noopener noreferrer" className="px-2.5 py-1 rounded bg-slate-800 text-slate-200 border border-slate-700 hover:bg-slate-700 transition-colors">
+                  GitHub Repository
+                </a>
+              </div>
             </motion.div>
 
             <motion.div

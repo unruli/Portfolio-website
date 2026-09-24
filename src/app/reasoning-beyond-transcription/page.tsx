@@ -21,7 +21,7 @@ import { CitationFooterSection } from "@/components/interspeech/CitationFooterSe
 export const metadata: Metadata = {
   title: "Reasoning Beyond Transcription | Audio Language Models on Child Stuttering Speech",
   description:
-    "A diagnostic benchmark evaluating modern Audio Language Models (ALMs) and ASR+LLM cascades on disfluent child speech. Interspeech 2026 research project page.",
+    "A diagnostic benchmark evaluating modern Audio Language Models (ALMs) and ASR+LLM cascades on disfluent child speech. Accepted to Interspeech 2026.",
   keywords: [
     "Audio Language Models",
     "Child Stuttering Speech",
@@ -31,13 +31,26 @@ export const metadata: Metadata = {
     "Speech AI",
     "FluencyBank",
     "University of Florida",
+    "arXiv:2609.07968",
+  ],
+  authors: [
+    { name: "Chibuzor Okocha", url: "https://chibuzorokocha.com" },
+    { name: "Christan Grant" },
+    { name: "Zoey Liu" },
   ],
   openGraph: {
     title: "Reasoning Beyond Transcription: Audio Language Models on Child Stuttering Speech",
     description:
-      "Can modern audio-language models directly understand and reason over child speech when the speech is disfluent?",
-    images: [{ url: "/images/hero-waveform.svg", width: 1200, height: 300 }],
+      "Can modern audio-language models directly understand and reason over child speech when the speech is disfluent? Read the paper on arXiv:2609.07968 and view code on GitHub.",
+    url: "https://chibuzorokocha.com/reasoning-beyond-transcription",
+    siteName: "Chibuzor Okocha Research",
     type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Reasoning Beyond Transcription: Audio Language Models on Child Stuttering Speech",
+    description:
+      "Diagnostic benchmark evaluating ALMs and ASR+LLM cascades on disfluent child speech (Interspeech 2026).",
   },
 };
 

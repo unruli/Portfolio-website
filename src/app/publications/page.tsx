@@ -93,6 +93,8 @@ const publications = [
     type: 'conference',
     abstract: 'Can modern audio-language models directly understand and reason over child speech when the speech is disfluent, mixed with adult speech, and not first converted into a clean transcript? We introduce a diagnostic benchmark evaluating Audio Language Models (ALMs) and ASR + LLM cascades on child stuttering speech.',
     projectPage: '/reasoning-beyond-transcription',
+    pdf: 'https://arxiv.org/abs/2609.07968',
+    code: 'https://github.com/ufdatastudio/child-speech-analysis',
     status: 'Interspeech 2026',
   },
   // Add more publications as needed

@@ -43,16 +43,16 @@ export const NavigationHeader: React.FC = () => {
           </div>
         </div>
 
-        <nav className="flex items-center space-x-3 text-xs">
+        <nav className="flex items-center space-x-2.5 text-xs">
           <a
             href="#demo"
-            className="hidden sm:inline-flex items-center space-x-1 text-slate-300 hover:text-cyan-400 px-3 py-1.5 rounded transition-colors"
+            className="hidden sm:inline-flex items-center space-x-1 text-slate-300 hover:text-cyan-400 px-2.5 py-1.5 rounded transition-colors"
           >
-            <span>Interactive Demo</span>
+            <span>Demo</span>
           </a>
           <a
             href="#results"
-            className="hidden sm:inline-flex items-center space-x-1 text-slate-300 hover:text-cyan-400 px-3 py-1.5 rounded transition-colors"
+            className="hidden sm:inline-flex items-center space-x-1 text-slate-300 hover:text-cyan-400 px-2.5 py-1.5 rounded transition-colors"
           >
             <span>Results</span>
           </a>
@@ -63,7 +63,16 @@ export const NavigationHeader: React.FC = () => {
             className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500/20 font-mono text-[11px] transition-all"
           >
             <FileText className="w-3.5 h-3.5" />
-            <span>Paper (PDF)</span>
+            <span>arXiv</span>
+          </a>
+          <a
+            href={paperMetadata.links.code}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded bg-slate-800 text-slate-200 border border-slate-700 hover:bg-slate-700 font-mono text-[11px] transition-all"
+          >
+            <Code className="w-3.5 h-3.5 text-cyan-400" />
+            <span className="hidden xs:inline">GitHub</span>
           </a>
         </nav>
       </div>
