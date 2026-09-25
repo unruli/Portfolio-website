@@ -27,45 +27,45 @@ export const BenchmarkGlanceSection: React.FC = () => {
         </div>
 
         {/* Facts Stat Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-16 font-mono">
-          <div className="p-5 rounded-xl bg-slate-950 border border-slate-800 text-center">
-            <span className="text-3xl sm:text-4xl font-bold text-white block mb-1">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-12 sm:mb-16 font-mono">
+          <div className="p-3.5 sm:p-5 rounded-xl bg-slate-950 border border-slate-800 text-center">
+            <span className="text-2xl sm:text-4xl font-bold text-white block mb-1">
               {benchmarkStats.numChildren}
             </span>
-            <span className="text-xs text-slate-400">Child Participants</span>
+            <span className="text-[11px] sm:text-xs text-slate-400">Child Participants</span>
           </div>
 
-          <div className="p-5 rounded-xl bg-slate-950 border border-slate-800 text-center">
-            <span className="text-3xl sm:text-4xl font-bold text-cyan-400 block mb-1">
+          <div className="p-3.5 sm:p-5 rounded-xl bg-slate-950 border border-slate-800 text-center">
+            <span className="text-2xl sm:text-4xl font-bold text-cyan-400 block mb-1">
               {benchmarkStats.numRecordings}
             </span>
-            <span className="text-xs text-slate-400">Total Audio Sessions</span>
+            <span className="text-[11px] sm:text-xs text-slate-400">Total Audio Sessions</span>
           </div>
 
-          <div className="p-5 rounded-xl bg-slate-950 border border-slate-800 text-center">
-            <div className="flex justify-center space-x-2 text-indigo-400 mb-1">
-              <span className="text-2xl font-bold">22</span>
+          <div className="p-3.5 sm:p-5 rounded-xl bg-slate-950 border border-slate-800 text-center">
+            <div className="flex justify-center space-x-1.5 sm:space-x-2 text-indigo-400 mb-1">
+              <span className="text-xl sm:text-2xl font-bold">22</span>
               <span className="text-slate-600">/</span>
-              <span className="text-2xl font-bold">22</span>
+              <span className="text-xl sm:text-2xl font-bold">22</span>
             </div>
-            <span className="text-[11px] text-slate-400">Single-Spk / Mixed Interview</span>
+            <span className="text-[10px] sm:text-[11px] text-slate-400">Single / Mixed Setup</span>
           </div>
 
-          <div className="p-5 rounded-xl bg-slate-950 border border-slate-800 text-center">
-            <span className="text-xl sm:text-2xl font-bold text-violet-400 block mb-1 mt-1">
+          <div className="p-3.5 sm:p-5 rounded-xl bg-slate-950 border border-slate-800 text-center">
+            <span className="text-lg sm:text-2xl font-bold text-violet-400 block mb-1 mt-0.5">
               {benchmarkStats.recordingDurationMinutes}
             </span>
-            <span className="text-xs text-slate-400">Per Session Duration</span>
+            <span className="text-[11px] sm:text-xs text-slate-400">Per Session Duration</span>
           </div>
         </div>
 
         {/* Interactive Difficulty Level Slider & Conceptual Animation */}
-        <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6 sm:p-10 shadow-2xl">
+        <div className="rounded-2xl bg-slate-950 border border-slate-800 p-4 sm:p-8 lg:p-10 shadow-2xl">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-900 pb-6 mb-8 gap-4">
             <div>
               <div className="flex items-center space-x-2 text-xs font-mono text-cyan-400 mb-1">
                 <Sliders className="w-4 h-4" />
-                <span>INTERACTIVE REASONING DIFFICULTY CONTROLE</span>
+                <span>INTERACTIVE REASONING DIFFICULTY CONTROLS</span>
               </div>
               <h4 className="text-xl font-bold text-white font-serif">
                 Entailment Reasoning Complexity Granularity
@@ -73,12 +73,12 @@ export const BenchmarkGlanceSection: React.FC = () => {
             </div>
 
             {/* Horizontal Control Tabs */}
-            <div className="flex items-center bg-slate-900 p-1.5 rounded-xl border border-slate-800">
+            <div className="flex items-center bg-slate-900 p-1 sm:p-1.5 rounded-xl border border-slate-800 flex-wrap sm:flex-nowrap w-full sm:w-auto">
               {reasoningDifficultyResults.map((item, idx) => (
                 <button
                   key={item.level}
                   onClick={() => setActiveDifficultyIndex(idx)}
-                  className={`px-4 py-2 rounded-lg font-mono text-xs font-bold transition-all ${
+                  className={`flex-1 sm:flex-none px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-mono text-xs font-bold transition-all text-center ${
                     activeDifficultyIndex === idx
                       ? "bg-cyan-500 text-slate-950 shadow-md"
                       : "text-slate-400 hover:text-white"

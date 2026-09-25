@@ -23,7 +23,7 @@ export const TasksSection: React.FC = () => {
         {/* Split Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Task 1: Child-Focused Summarization */}
-          <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6 sm:p-8 flex flex-col justify-between hover:border-cyan-900/60 transition-colors">
+          <div className="rounded-2xl bg-slate-950 border border-slate-800 p-4 sm:p-8 flex flex-col justify-between hover:border-cyan-900/60 transition-colors">
             <div>
               <div className="flex items-center justify-between mb-4">
                 <span className="px-2.5 py-1 rounded bg-cyan-950 text-cyan-400 border border-cyan-800 font-mono text-xs font-semibold">
@@ -41,17 +41,17 @@ export const TasksSection: React.FC = () => {
               {/* Input -> Prompt -> Output Specs */}
               <div className="space-y-3 mb-6 font-mono text-xs">
                 <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800 flex items-start space-x-3">
-                  <span className="text-slate-500 min-w-[70px]">Input:</span>
+                  <span className="text-slate-500 w-16 shrink-0">Input:</span>
                   <span className="text-slate-200">Mixed-speaker raw audio file (no transcript)</span>
                 </div>
                 <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800 flex items-start space-x-3">
-                  <span className="text-cyan-400 min-w-[70px]">Prompt:</span>
+                  <span className="text-cyan-400 w-16 shrink-0">Prompt:</span>
                   <span className="text-slate-300 italic">
                     “Listen to the audio. Summarize what the child intended to convey, ignoring interviewer questions.”
                   </span>
                 </div>
                 <div className="p-3 rounded-lg bg-slate-900/90 border border-cyan-900/40 flex items-start space-x-3">
-                  <span className="text-emerald-400 min-w-[70px]">Output:</span>
+                  <span className="text-emerald-400 w-16 shrink-0">Output:</span>
                   <span className="text-emerald-300">Child-centered summary string</span>
                 </div>
               </div>
@@ -62,7 +62,7 @@ export const TasksSection: React.FC = () => {
               <span className="text-[10px] font-mono text-slate-500 uppercase tracking-wider block mb-2">
                 Evaluation Metrics
               </span>
-              <div className="grid grid-cols-3 gap-2 text-center text-xs font-mono">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-center text-xs font-mono">
                 <div className="p-2 rounded bg-slate-900 border border-slate-800">
                   <span className="text-cyan-400 block font-bold">Fluency</span>
                   <span className="text-[10px] text-slate-400">Readability</span>
@@ -80,7 +80,7 @@ export const TasksSection: React.FC = () => {
           </div>
 
           {/* Task 2: Child Speech Entailment */}
-          <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6 sm:p-8 flex flex-col justify-between hover:border-indigo-900/60 transition-colors">
+          <div className="rounded-2xl bg-slate-950 border border-slate-800 p-4 sm:p-8 flex flex-col justify-between hover:border-indigo-900/60 transition-colors">
             <div>
               <div className="flex items-center justify-between mb-4">
                 <span className="px-2.5 py-1 rounded bg-indigo-950 text-indigo-400 border border-indigo-800 font-mono text-xs font-semibold">
@@ -98,17 +98,17 @@ export const TasksSection: React.FC = () => {
               {/* Input -> Hypothesis -> 3 Class Badges */}
               <div className="space-y-3 mb-6 font-mono text-xs">
                 <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800 flex items-start space-x-3">
-                  <span className="text-slate-500 min-w-[70px]">Input:</span>
+                  <span className="text-slate-500 w-16 shrink-0">Input:</span>
                   <span className="text-slate-200">Raw spoken audio + textual hypothesis</span>
                 </div>
                 <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800 flex items-start space-x-3">
-                  <span className="text-indigo-400 min-w-[70px]">Goal:</span>
+                  <span className="text-indigo-400 w-16 shrink-0">Goal:</span>
                   <span className="text-slate-300">Classify relationship into 1 of 3 categories</span>
                 </div>
               </div>
 
               {/* 3 Distinct Entailment Output Labels */}
-              <div className="grid grid-cols-3 gap-3 mb-6 font-mono text-xs">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6 font-mono text-xs">
                 <div className="p-3 rounded-lg bg-emerald-950/60 border border-emerald-500/50 text-emerald-300 text-center flex flex-col items-center">
                   <CheckCircle2 className="w-5 h-5 mb-1 text-emerald-400" />
                   <span className="font-bold">ENTAILMENT</span>

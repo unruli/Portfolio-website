@@ -41,20 +41,20 @@ export const HeroSection: React.FC = () => {
 
         {/* Title & Subtitle */}
         <div className="text-center max-w-4xl mx-auto mb-8">
-          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white mb-4 font-serif">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-4 font-serif leading-tight">
             Reasoning Beyond Transcription
           </h1>
-          <p className="text-xl sm:text-2xl text-cyan-400 font-light mb-3">
+          <p className="text-lg sm:text-2xl text-cyan-400 font-light mb-3">
             Can audio-language models reason over disfluent child speech?
           </p>
-          <p className="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto font-mono">
+          <p className="text-xs sm:text-base text-slate-400 max-w-2xl mx-auto font-mono leading-relaxed px-2">
             {paperMetadata.fullPaperTitle}
           </p>
         </div>
 
         {/* Authors & Affiliation */}
         <div className="text-center mb-10">
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm sm:text-base text-slate-200">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 sm:gap-x-6 gap-y-2 text-xs sm:text-base text-slate-200">
             {paperMetadata.authors.map((author, idx) => (
               <span key={idx} className="font-medium">
                 {author.link ? (
@@ -77,12 +77,12 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* Action Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-3 mb-16">
+        <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-12 sm:mb-16">
           <a
             href={paperMetadata.links.paper}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-lg bg-cyan-500/10 text-cyan-300 border border-cyan-500/40 hover:bg-cyan-500/20 font-mono text-xs font-semibold transition-all shadow-lg shadow-cyan-950/50"
+            className="inline-flex items-center space-x-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg bg-cyan-500/10 text-cyan-300 border border-cyan-500/40 hover:bg-cyan-500/20 font-mono text-xs font-semibold transition-all shadow-lg shadow-cyan-950/50"
           >
             <FileText className="w-4 h-4" />
             <span>arXiv Paper (PDF)</span>
@@ -91,14 +91,14 @@ export const HeroSection: React.FC = () => {
             href={paperMetadata.links.code}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-lg bg-slate-800/80 text-slate-200 border border-slate-700 hover:bg-slate-700/80 font-mono text-xs font-semibold transition-all"
+            className="inline-flex items-center space-x-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg bg-slate-800/80 text-slate-200 border border-slate-700 hover:bg-slate-700/80 font-mono text-xs font-semibold transition-all"
           >
             <Code className="w-4 h-4 text-cyan-400" />
             <span>GitHub Code</span>
           </a>
           <button
             onClick={handleCopyBibTeX}
-            className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-lg bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-700 font-mono text-xs transition-all"
+            className="inline-flex items-center space-x-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-700 font-mono text-xs transition-all"
           >
             {copiedBibTeX ? (
               <>
@@ -115,7 +115,7 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* Visual Centerpiece: Scientific Pipeline Diagram */}
-        <div className="relative rounded-2xl bg-slate-950/80 border border-slate-800/80 p-6 sm:p-8 shadow-2xl backdrop-blur-xl max-w-5xl mx-auto overflow-hidden">
+        <div className="relative rounded-2xl bg-slate-950/80 border border-slate-800/80 p-4 sm:p-8 shadow-2xl backdrop-blur-xl max-w-5xl mx-auto overflow-hidden">
           <div className="flex items-center justify-between border-b border-slate-800/60 pb-3 mb-6">
             <div className="flex items-center space-x-2 text-xs font-mono text-slate-400">
               <Sparkles className="w-3.5 h-3.5 text-cyan-400" />

@@ -23,30 +23,30 @@ export const HeadlineResultSection: React.FC = () => {
         </div>
 
         {/* Major Visual Comparison Box */}
-        <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6 sm:p-10 shadow-2xl relative overflow-hidden mb-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="rounded-2xl bg-slate-950 border border-slate-800 p-4 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden mb-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
             {/* Left: Strongest ALM */}
-            <div className="lg:col-span-5 p-6 rounded-xl bg-slate-900/90 border border-indigo-900/60 relative">
+            <div className="lg:col-span-5 p-4 sm:p-6 rounded-xl bg-slate-900/90 border border-indigo-900/60 relative">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-950 text-indigo-300 border border-indigo-800">
                   STRONGEST END-TO-END ALM
                 </span>
-                <Cpu className="w-4 h-4 text-indigo-400" />
+                <Cpu className="w-4 h-4 text-indigo-400 shrink-0" />
               </div>
-              <h4 className="text-2xl font-bold text-white font-mono mb-6">
+              <h4 className="text-xl sm:text-2xl font-bold text-white font-mono mb-6">
                 {headlineResult.alm.name}
               </h4>
 
-              <div className="grid grid-cols-2 gap-4 font-mono">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 font-mono">
                 <div className="p-3 rounded-lg bg-slate-950 border border-slate-800">
                   <span className="text-slate-500 text-[10px] block">Overall Accuracy</span>
-                  <span className="text-2xl font-bold text-indigo-300">
+                  <span className="text-xl sm:text-2xl font-bold text-indigo-300">
                     {headlineResult.alm.accuracy.toFixed(3)}
                   </span>
                 </div>
                 <div className="p-3 rounded-lg bg-slate-950 border border-slate-800">
                   <span className="text-slate-500 text-[10px] block">Macro F1 Score</span>
-                  <span className="text-2xl font-bold text-indigo-300">
+                  <span className="text-xl sm:text-2xl font-bold text-indigo-300">
                     {headlineResult.alm.macroF1.toFixed(3)}
                   </span>
                 </div>
@@ -54,7 +54,7 @@ export const HeadlineResultSection: React.FC = () => {
             </div>
 
             {/* Middle: Delta gap / comparison arrow */}
-            <div className="lg:col-span-2 flex flex-col items-center justify-center py-4">
+            <div className="lg:col-span-2 flex flex-col items-center justify-center py-2 sm:py-4">
               <div className="px-3 py-1.5 rounded-full bg-cyan-950 text-cyan-300 border border-cyan-800 font-mono text-xs font-bold mb-2 flex items-center space-x-1">
                 <ArrowUpRight className="w-4 h-4" />
                 <span>+5.8% Accuracy Gap</span>
@@ -65,27 +65,27 @@ export const HeadlineResultSection: React.FC = () => {
             </div>
 
             {/* Right: Strongest Cascade */}
-            <div className="lg:col-span-5 p-6 rounded-xl bg-slate-900/90 border border-cyan-900/60 relative">
+            <div className="lg:col-span-5 p-4 sm:p-6 rounded-xl bg-slate-900/90 border border-cyan-900/60 relative">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">
                   STRONGEST ASR + LLM CASCADE
                 </span>
-                <TrendingUp className="w-4 h-4 text-cyan-400" />
+                <TrendingUp className="w-4 h-4 text-cyan-400 shrink-0" />
               </div>
-              <h4 className="text-2xl font-bold text-white font-mono mb-6">
+              <h4 className="text-xl sm:text-2xl font-bold text-white font-mono mb-6">
                 {headlineResult.cascade.name}
               </h4>
 
-              <div className="grid grid-cols-2 gap-4 font-mono">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 font-mono">
                 <div className="p-3 rounded-lg bg-slate-950 border border-slate-800">
                   <span className="text-slate-500 text-[10px] block">Overall Accuracy</span>
-                  <span className="text-2xl font-bold text-cyan-400">
+                  <span className="text-xl sm:text-2xl font-bold text-cyan-400">
                     {headlineResult.cascade.accuracy.toFixed(3)}
                   </span>
                 </div>
                 <div className="p-3 rounded-lg bg-slate-950 border border-slate-800">
                   <span className="text-slate-500 text-[10px] block">Macro F1 Score</span>
-                  <span className="text-2xl font-bold text-cyan-400">
+                  <span className="text-xl sm:text-2xl font-bold text-cyan-400">
                     {headlineResult.cascade.macroF1.toFixed(3)}
                   </span>
                 </div>

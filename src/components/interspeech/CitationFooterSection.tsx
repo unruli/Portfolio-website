@@ -82,7 +82,7 @@ export const CitationFooterSection: React.FC = () => {
 
           {/* Right: BibTeX Code Block */}
           <div className="lg:col-span-7">
-            <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6 shadow-xl relative">
+            <div className="rounded-2xl bg-slate-950 border border-slate-800 p-4 sm:p-6 shadow-xl relative overflow-hidden">
               <div className="flex items-center justify-between border-b border-slate-900 pb-3 mb-4 font-mono text-xs">
                 <span className="text-slate-400 font-bold">BibTeX Citation</span>
                 <button
@@ -103,7 +103,7 @@ export const CitationFooterSection: React.FC = () => {
                 </button>
               </div>
 
-              <pre className="p-4 rounded-xl bg-slate-900/90 text-slate-300 font-mono text-xs overflow-x-auto border border-slate-850 leading-relaxed">
+              <pre className="p-3 sm:p-4 rounded-xl bg-slate-900/90 text-slate-300 font-mono text-[11px] sm:text-xs overflow-x-auto border border-slate-850 leading-relaxed max-w-full">
                 <code>{paperMetadata.bibtex}</code>
               </pre>
             </div>

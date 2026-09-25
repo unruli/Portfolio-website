@@ -52,7 +52,7 @@ export const DisfluencyStressTestSection: React.FC = () => {
         </div>
 
         {/* Main Spectrogram / Density Performance Plot Box */}
-        <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6 sm:p-10 shadow-2xl">
+        <div className="rounded-2xl bg-slate-950 border border-slate-800 p-4 sm:p-8 lg:p-10 shadow-2xl">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-900 pb-4 mb-8 gap-4">
             <div>
               <h4 className="text-lg font-bold text-white font-mono">
@@ -64,10 +64,10 @@ export const DisfluencyStressTestSection: React.FC = () => {
             </div>
 
             {/* Plot view toggle */}
-            <div className="flex items-center bg-slate-900 p-1.5 rounded-xl border border-slate-800 text-xs font-mono">
+            <div className="flex items-center bg-slate-900 p-1 sm:p-1.5 rounded-xl border border-slate-800 text-xs font-mono w-full sm:w-auto">
               <button
                 onClick={() => setActivePlotTab("entailment")}
-                className={`px-3 py-1.5 rounded-lg font-bold transition-all ${
+                className={`flex-1 sm:flex-none px-3 py-1.5 rounded-lg font-bold transition-all text-center ${
                   activePlotTab === "entailment"
                     ? "bg-cyan-500 text-slate-950"
                     : "text-slate-400 hover:text-white"
@@ -77,7 +77,7 @@ export const DisfluencyStressTestSection: React.FC = () => {
               </button>
               <button
                 onClick={() => setActivePlotTab("summarization")}
-                className={`px-3 py-1.5 rounded-lg font-bold transition-all ${
+                className={`flex-1 sm:flex-none px-3 py-1.5 rounded-lg font-bold transition-all text-center ${
                   activePlotTab === "summarization"
                     ? "bg-indigo-500 text-slate-950"
                     : "text-slate-400 hover:text-white"

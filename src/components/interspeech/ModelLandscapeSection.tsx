@@ -133,7 +133,7 @@ export const ModelLandscapeSection: React.FC = () => {
               </span>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono text-xs">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 font-mono text-xs">
               {endToEndALMs.map((model) => (
                 <div
                   key={model.name}

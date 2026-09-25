@@ -22,10 +22,10 @@ export const ProblemSection: React.FC = () => {
         </div>
 
         {/* Integrated Visual Pipeline */}
-        <div className="mb-16 bg-slate-950 rounded-2xl border border-slate-800 p-6 sm:p-10 relative overflow-hidden">
-          <div className="text-xs font-mono text-slate-400 mb-6 flex items-center justify-between border-b border-slate-900 pb-3">
+        <div className="mb-16 bg-slate-950 rounded-2xl border border-slate-800 p-4 sm:p-8 lg:p-10 relative overflow-hidden">
+          <div className="text-xs font-mono text-slate-400 mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-900 pb-3">
             <span>COMPOUND ACOUSTIC STREAM INPUT</span>
-            <span className="text-slate-500">Voices of Children Who Stutter Benchmark</span>
+            <span className="text-slate-500 text-[11px]">Voices of Children Who Stutter Benchmark</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -82,8 +82,8 @@ export const ProblemSection: React.FC = () => {
           </div>
 
           {/* Central Flow Vector */}
-          <div className="p-6 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex items-center space-x-3 text-xs font-mono">
+          <div className="p-4 sm:p-6 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
+            <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 text-xs font-mono">
               <span className="px-2.5 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">Child</span>
               <span className="text-slate-500">+</span>
               <span className="px-2.5 py-1 rounded bg-rose-950 text-rose-300 border border-rose-800">Disfluency</span>

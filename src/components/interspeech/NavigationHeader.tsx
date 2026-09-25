@@ -22,37 +22,37 @@ export const NavigationHeader: React.FC = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0b0f17]/80 backdrop-blur-md border-b border-slate-800/80">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <div className="flex items-center space-x-4">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0b0f17]/90 backdrop-blur-md border-b border-slate-800/80">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-2">
+        <div className="flex items-center space-x-2 sm:space-x-3 min-w-0">
           <Link
             href="/"
-            className="flex items-center space-x-2 text-xs font-mono text-slate-400 hover:text-cyan-400 transition-colors"
+            className="flex items-center space-x-1 text-xs font-mono text-slate-400 hover:text-cyan-400 transition-colors shrink-0"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
-            <span>Chibuzor Okocha</span>
+            <span className="hidden xs:inline">Chibuzor</span>
           </Link>
-          <span className="text-slate-700">/</span>
-          <div className="flex items-center space-x-2">
-            <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono font-medium bg-cyan-950/80 text-cyan-400 border border-cyan-800/50">
+          <span className="text-slate-700 hidden xs:inline">/</span>
+          <div className="flex items-center space-x-1.5 min-w-0">
+            <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono font-medium bg-cyan-950/80 text-cyan-400 border border-cyan-800/50 shrink-0">
               Interspeech 2026
             </span>
-            <span className="text-xs font-medium text-slate-200 hidden md:inline truncate max-w-xs lg:max-w-md">
+            <span className="text-xs font-medium text-slate-200 hidden lg:inline truncate max-w-xs">
               Reasoning Beyond Transcription
             </span>
           </div>
         </div>
 
-        <nav className="flex items-center space-x-2.5 text-xs">
+        <nav className="flex items-center space-x-1.5 sm:space-x-2.5 text-xs shrink-0">
           <a
             href="#demo"
-            className="hidden sm:inline-flex items-center space-x-1 text-slate-300 hover:text-cyan-400 px-2.5 py-1.5 rounded transition-colors"
+            className="hidden md:inline-flex items-center space-x-1 text-slate-300 hover:text-cyan-400 px-2.5 py-1.5 rounded transition-colors"
           >
             <span>Demo</span>
           </a>
           <a
             href="#results"
-            className="hidden sm:inline-flex items-center space-x-1 text-slate-300 hover:text-cyan-400 px-2.5 py-1.5 rounded transition-colors"
+            className="hidden md:inline-flex items-center space-x-1 text-slate-300 hover:text-cyan-400 px-2.5 py-1.5 rounded transition-colors"
           >
             <span>Results</span>
           </a>
@@ -60,7 +60,7 @@ export const NavigationHeader: React.FC = () => {
             href={paperMetadata.links.paper}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500/20 font-mono text-[11px] transition-all"
+            className="inline-flex items-center space-x-1 px-2.5 sm:px-3 py-1.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500/20 font-mono text-[11px] transition-all"
           >
             <FileText className="w-3.5 h-3.5" />
             <span>arXiv</span>
@@ -69,10 +69,10 @@ export const NavigationHeader: React.FC = () => {
             href={paperMetadata.links.code}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded bg-slate-800 text-slate-200 border border-slate-700 hover:bg-slate-700 font-mono text-[11px] transition-all"
+            className="inline-flex items-center space-x-1 px-2.5 sm:px-3 py-1.5 rounded bg-slate-800 text-slate-200 border border-slate-700 hover:bg-slate-700 font-mono text-[11px] transition-all"
           >
             <Code className="w-3.5 h-3.5 text-cyan-400" />
-            <span className="hidden xs:inline">GitHub</span>
+            <span>GitHub</span>
           </a>
         </nav>
       </div>

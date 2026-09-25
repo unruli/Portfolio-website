@@ -56,7 +56,7 @@ export const ReasoningDemoSection: React.FC = () => {
         )}
 
         {/* Demo Selection Tabs */}
-        <div className="flex items-center justify-center gap-2 mb-8 overflow-x-auto pb-2">
+        <div className="flex items-center justify-start sm:justify-center gap-2 mb-8 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-slate-800 max-w-full">
           {demoItems.map((item, idx) => (
             <button
               key={item.id}
@@ -64,7 +64,7 @@ export const ReasoningDemoSection: React.FC = () => {
                 setSelectedDemoIndex(idx);
                 handleReset();
               }}
-              className={`px-4 py-2 rounded-lg font-mono text-xs transition-all whitespace-nowrap border ${
+              className={`px-3 sm:px-4 py-2 rounded-lg font-mono text-xs transition-all whitespace-nowrap border shrink-0 ${
                 selectedDemoIndex === idx
                   ? "bg-cyan-500/20 text-cyan-300 border-cyan-500/60 shadow-lg shadow-cyan-950/50"
                   : "bg-slate-900/80 text-slate-400 border-slate-800 hover:text-slate-200 hover:border-slate-700"
@@ -76,28 +76,28 @@ export const ReasoningDemoSection: React.FC = () => {
         </div>
 
         {/* Interactive Workspace */}
-        <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6 sm:p-8 shadow-2xl">
+        <div className="rounded-2xl bg-slate-950 border border-slate-800 p-4 sm:p-8 shadow-2xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             {/* Left: Input Audio Waveform & Context */}
             <div className="lg:col-span-6 space-y-6">
               {/* Waveform Player Box */}
-              <div className="p-5 rounded-xl bg-slate-900/90 border border-slate-800 relative">
+              <div className="p-4 sm:p-5 rounded-xl bg-slate-900/90 border border-slate-800 relative">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-2">
-                    <Volume2 className="w-4 h-4 text-cyan-400" />
-                    <span className="text-xs font-mono text-slate-300 font-bold">
+                    <Volume2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <span className="text-xs font-mono text-slate-300 font-bold truncate">
                       {activeDemo.title}
                     </span>
                   </div>
-                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700 shrink-0">
                     Difficulty: {activeDemo.difficulty}
                   </span>
                 </div>
 
                 {/* Simulated Audio Waveform Display */}
-                <div className="h-24 bg-slate-950 rounded-lg border border-slate-800 p-3 flex items-center justify-center relative overflow-hidden mb-4">
+                <div className="h-20 sm:h-24 bg-slate-950 rounded-lg border border-slate-800 p-3 flex items-center justify-center relative overflow-hidden mb-4">
                   {/* Waveform bars */}
-                  <div className="w-full flex items-center justify-between gap-1 opacity-70">
+                  <div className="w-full flex items-center justify-between gap-0.5 sm:gap-1 opacity-70">
                     {[20, 40, 60, 80, 40, 30, 90, 100, 70, 50, 20, 80, 60, 40, 90, 70, 30, 50, 80, 40, 20, 60, 90, 30].map(
                       (h, i) => (
                         <div
@@ -137,7 +137,7 @@ export const ReasoningDemoSection: React.FC = () => {
               </div>
 
               {/* Hypothesis Box */}
-              <div className="p-5 rounded-xl bg-slate-900/90 border border-indigo-950">
+              <div className="p-4 sm:p-5 rounded-xl bg-slate-900/90 border border-indigo-950">
                 <span className="text-[10px] font-mono text-indigo-400 uppercase tracking-wider block mb-2">
                   EVALUATION HYPOTHESIS STATEMENT
                 </span>
@@ -155,7 +155,7 @@ export const ReasoningDemoSection: React.FC = () => {
                 </span>
 
                 {/* 3 Buttons */}
-                <div className="grid grid-cols-3 gap-3 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
                   <button
                     onClick={() => handleSelectChoice("ENTAILMENT")}
                     className={`p-3 rounded-xl font-mono text-xs font-bold border transition-all flex flex-col items-center gap-1 ${
