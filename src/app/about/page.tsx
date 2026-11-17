@@ -1,7 +1,6 @@
 'use client'
 
 import * as React from 'react'
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { 
   AcademicCapIcon,
@@ -13,89 +12,116 @@ import {
 
 const education = [
   {
-    degree: 'PhD in Computer Science',
+    degree: 'Ph.D., Engineering (Speech AI)',
     institution: 'University of Florida',
-    status: 'In Progress',
-    description: 'Research focus on Speech and Audio AI, reasoning in Audio Language Models, accented and multilingual speech recognition systems',
-  },
-
-  {
-    degree: 'Master of Science in Computer Science',
-    institution: 'University of Florida',
-    status: 'August 2025',
-    description: 'Thesis research on AI and speech processing',
+    status: 'August 2023 - Present',
+    description: 'Doctoral research in CISE and the UF Data Studio with Dr. Christan Grant, focused on audio language models, speech understanding, neural audio codecs, and multilingual audio AI.',
   },
   {
-    degree: 'Bachelor of Science in Computer Engineering',
+    degree: 'M.S., Engineering Education',
     institution: 'University of Florida',
-    status: 'Completed 2020',
-    description: 'Foundation in computer engineering principles and systems',
+    status: 'May 2026',
+    description: 'Graduate study in engineering education and AI-enabled learning research.',
+  },
+  {
+    degree: 'B.Sc., Computer Engineering',
+    institution: 'University of Benin, Nigeria',
+    status: '2021',
+    description: 'Foundation in computer engineering, software, and intelligent systems.',
   },
 ]
 
 const experience = [
   {
-    title: 'Research Intern - Speech AI Lab',
-    institution: 'Adobe (San Francisco, CA)',
-    period: 'May 2026 - August 2026',
-    description: 'Conducted research in speech AI and presented findings to the Adobe research CAVA group.',
+    title: 'Research Scientist Intern',
+    institution: 'Adobe Research',
+    period: 'May 2026 - Present',
+    description: 'Building multimodal tool-calling agents for audio editing, pretraining and fine-tuning audio language models, and developing model-driven approaches for Adobe Audition workflows.',
+  },
+  {
+    title: 'Research Assistant - Project ALTER',
+    institution: 'UF Data Studio, University of Florida',
+    period: 'Fall 2025 - Present',
+    description: 'Advancing speech and language technology for African and other under-resourced tonal languages, with emphasis on intonation, emphasis, and emotion.',
   },
   {
     title: 'Graduate Research Assistant',
-    institution: 'University of Florida - Computer Science',
-    period: '2023 - Present',
-    description: 'Conducting research on Speech and Audio AI, developing reasoning capabilities in Audio Language Models, and creating robust systems for accented and multilingual speech processing',
+    institution: 'UF Data Studio (CISE), University of Florida',
+    period: 'August 2023 - May 2026',
+    description: 'Led research on audio language models, ASR, neural audio codecs, child and disfluent speech, and accented multilingual speech, producing peer-reviewed work across speech and NLP venues.',
   },
   {
-    title: 'Teaching Assistant',
-    institution: 'University of Florida',
-    period: '2022 - 2023',
-    description: 'Assisted with undergraduate engineering courses, developed educational materials, and mentored students in research projects',
+    title: 'Data Science Intern',
+    institution: 'Colgate-Palmolive',
+    period: 'May 2025 - December 2025',
+    description: 'Built and evaluated more than five machine-learning models and engineered large-scale data-cleaning and feature pipelines for product-characteristic prediction.',
+  },
+  {
+    title: 'Research Assistant - Clinical Speech Recognition',
+    institution: 'Intron Health (Intron Voice AI)',
+    period: 'May 2024 - August 2024',
+    description: 'Developed and evaluated multilingual ASR and speaker-diarization models for African-accented English and contributed to the AfriSpeech-Dialog benchmark.',
+  },
+  {
+    title: 'Research Intern',
+    institution: 'BioRamp Labs',
+    period: 'January 2021 - June 2023',
+    description: 'Built end-to-end ASR and diarization pipelines, established WER and DER evaluation protocols, and supported speech-AI research for real-time healthcare applications.',
   },
 ]
 
 const service = [
-  {
-    role: 'Reviewer',
-    organization: 'NeurIPS',
-  },
-  {
-    role: 'Reviewer',
-    organization: 'ECCV',
-  },
-  {
-    role: 'Reviewer',
-    organization: 'ACL',
-  },
-  {
-    role: 'Reviewer',
-    organization: 'ACM Tapia Conference',
-  },
+  { role: 'Conference Reviewer', organization: 'NeurIPS' },
+  { role: 'Conference Reviewer', organization: 'ACL, EMNLP, NAACL & EACL' },
+  { role: 'Conference Reviewer', organization: 'ICMLA & ACDSA 2026' },
+  { role: 'Conference Reviewer', organization: 'ICDE & IEEE BigData' },
+  { role: 'Workshop Reviewer', organization: 'AfricaNLP' },
 ]
 
 const talks = [
   {
-    title: 'Workshop Talk',
-    venue: 'ACM Tapia Conference',
-    date: 'September 2026',
-    badge: '/tapia-speaker-badge.png',
+    title: 'Can Large Audio Language Models Understand Child Stuttering Speech?',
+    venue: 'IEEE ASRU 2025 Satellite Workshop',
+    date: 'December 2025',
   },
   {
-    title: 'Research Talk',
-    venue: 'Adobe Research (CAVA Group)',
-    date: 'August 2026',
+    title: 'AfriVox: Probing Multilingual and Accent Robustness of Speech LLMs',
+    venue: 'EACL 2026',
+    date: '2026',
+  },
+  {
+    title: 'Afrispeech-Semantics: Evaluating Audio-Semantic Reasoning',
+    venue: 'ACL 2026',
+    date: '2026',
+  },
+  {
+    title: 'AfriSpeech-Dialog: A Benchmark Dataset for Spontaneous English Conversations',
+    venue: 'NAACL 2025',
+    date: '2025',
+  },
+  {
+    title: 'Multilingual and Low-Resource Speech AI Research',
+    venue: 'Midwest Speech and Language Days',
+    date: 'April 2026',
   },
 ]
 
 const skills = [
-  'Speech and Audio AI',
   'Audio Language Models',
-  'Accented Speech Recognition',
-  'Multilingual Speech Processing',
-  'Deep Learning',
-  'Python Programming',
-  'Research Methodology',
-  'Statistical Analysis',
+  'ASR & Speaker Diarization',
+  'Neural Audio Codecs',
+  'Speech Dataset Engineering',
+  'PyTorch & Transformers',
+  'Model Pre/Post-Training',
+  'LoRA & Fine-Tuning',
+  'Distributed Training',
+  'Python, SQL & JavaScript',
+  'Hugging Face Datasets',
+  'Weights & Biases',
+  'pandas & Tableau',
+  'Audio Quality Evaluation',
+  'Multilingual & Disfluent Speech',
+  'Technical Communication',
 ]
 
 export default function About() {
@@ -113,10 +139,10 @@ export default function About() {
           </h1>
           <div className="text-xl text-white max-w-3xl mx-auto space-y-4">
             <p>
-              I am a PhD student in Computer Science at the University of Florida, specializing in Speech and Audio AI. I have deep expertise in <span className="font-semibold">training multimodal and tool-calling audio models</span>, as well as advancing reasoning capabilities in Audio Language Models.
+              I am an audio and speech ML engineer and Ph.D. researcher in Speech AI at the University of Florida. My work spans multimodal tool-calling audio agents, audio language models, ASR, diarization, neural codecs, and evaluation on accented, multilingual, and disfluent speech.
             </p>
             <p className="font-semibold text-blue-300">
-              I am actively seeking full-time opportunities and am open to Research Scientist roles in Speech and Audio AI.
+              I have 5+ years of hands-on experience turning complex audio into curated datasets, reliable benchmarks, and deployed research systems.
             </p>
           </div>
         </motion.div>
@@ -237,17 +263,6 @@ export default function About() {
                     <span className="text-gray-600 dark:text-gray-300">{talk.venue}</span>
                     <span className="text-gray-500 dark:text-gray-400">{talk.date}</span>
                   </div>
-                  {talk.badge && (
-                    <div className="mt-2 flex justify-center">
-                      <Image 
-                        src={talk.badge} 
-                        alt={`${talk.venue} Speaker Badge`} 
-                        width={400} 
-                        height={210} 
-                        className="rounded-md shadow-sm border border-gray-200 dark:border-gray-700 object-contain"
-                      />
-                    </div>
-                  )}
                 </motion.div>
               ))}
             </div>

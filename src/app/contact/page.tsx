@@ -19,7 +19,7 @@ const socialLinks = [
   },
   {
     name: 'Google Scholar',
-    href: 'https://scholar.google.com/citations?user=your-profile',
+    href: 'https://scholar.google.com/citations?user=mycXdzwAAAAJ&hl=en',
     icon: AcademicCapIcon,
     description: 'View my academic publications',
   },
@@ -31,7 +31,7 @@ const socialLinks = [
   },
   {
     name: 'Schedule Meeting',
-    href: 'https://calendly.com/your-profile',
+    href: 'https://calendly.com/c-okocha-ufl/30min',
     icon: CalendarIcon,
     description: 'Book a meeting with me',
   },

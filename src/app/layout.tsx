@@ -7,8 +7,8 @@ import Navbar from '@/components/Navbar'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const lora = Lora({ subsets: ['latin'], variable: '--font-lora' })
 export const metadata: Metadata = {
-  title: 'Chibuzor Okocha - PhD Student',
-  description: 'PhD student in Computer Science at University of Florida. Research in Speech and Audio AI, reasoning in Audio Language Models, and accented multilingual speech processing.',
+  title: 'Chibuzor Okocha - Audio & Speech ML Engineer',
+  description: 'Audio and speech ML engineer and University of Florida Ph.D. researcher working on audio language models, ASR, neural audio codecs, and inclusive multilingual speech AI.',
 }
 
 export default function RootLayout({

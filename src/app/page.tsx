@@ -12,23 +12,23 @@ import {
 
 const researchInterests = [
   {
-    title: 'Speech and Audio AI',
-    description: 'Developing advanced AI systems for speech and audio processing applications',
+    title: 'Speech and Audio ML',
+    description: 'Building and evaluating ASR, diarization, audio understanding, and speech-generation systems',
     icon: LightBulbIcon,
   },
   {
     title: 'Audio Language Models',
-    description: 'Researching reasoning capabilities and cognitive processes in audio language models',
+    description: 'Training and evaluating models that reason over audio beyond transcription, including tool-calling agents',
     icon: CpuChipIcon,
   },
   {
-    title: 'Accented Speech Recognition',
-    description: 'Building robust speech recognition systems for diverse accents and dialects',
+    title: 'Inclusive Speech Benchmarks',
+    description: 'Curating datasets and robust evaluations for accented, multilingual, child, and disfluent speech',
     icon: BookOpenIcon,
   },
   {
-    title: 'Multilingual Audio AI',
-    description: 'Creating inclusive AI systems that work across multiple languages and cultures',
+    title: 'Neural Audio Codecs',
+    description: 'Auditing perceptual fidelity, speaker preservation, fairness, and language structure in audio compression',
     icon: AcademicCapIcon,
   },
 ]
@@ -78,25 +78,25 @@ export default function Home() {
                 </h1>
                 <div className="space-y-2 pt-2">
                   <p className="text-lg text-gray-700 dark:text-gray-300">
-                    I am a PhD student in Computer Science at the University of Florida and a member of the <a 
+                    I am an audio and speech ML engineer, a Ph.D. researcher in Speech AI at the University of Florida, and a member of the <a 
                       href="https://ufdatastudio.com/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-blue-600 dark:text-blue-400 hover:underline font-semibold"
                     >
                       UF DataStudio Lab
-                    </a>. I am currently on the job market and <span className="font-semibold text-blue-600 dark:text-blue-400">open to Research Scientist roles in Speech and Audio AI</span>.
+                    </a>. I am currently a <span className="font-semibold text-blue-600 dark:text-blue-400">Research Scientist Intern at Adobe Research</span>.
                   </p>
                 </div>
               </div>
 
               <div className="space-y-4">
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  My research centers on <span className="font-medium text-gray-900 dark:text-white">Speech and Audio AI</span>, with extensive experience in <span className="font-medium text-gray-900 dark:text-white">training multimodal and tool-calling audio models</span>. I focus on advancing the reasoning capabilities of Audio Language Models and developing robust, inclusive systems for accented and multilingual speech processing.
+                  I turn raw, multilingual, and acoustically challenging audio into curated datasets, reliable benchmarks, and deployed models. My work spans <span className="font-medium text-gray-900 dark:text-white">audio language models, ASR, diarization, neural codecs, and multimodal tool-calling agents</span>.
                 </p>
                 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  I am passionate about building open science communities, mentoring aspiring AI researchers, and democratizing access to cutting-edge speech technology across diverse languages and cultures.
+                  Across Adobe Research, Intron Health, BioRamp Labs, and Colgate-Palmolive, I have built Python pipelines and ML systems that connect frontier speech research with production workflows and clear stakeholder decisions.
                 </p>
               </div>
 
@@ -149,40 +149,40 @@ export default function Home() {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
-                    <span className="text-green-500 text-lg">✅</span>
-                    <div>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">[September 2026]</span>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Excited to share that I have <span className="font-semibold">2 papers accepted</span> to IEEE SLT 2026!
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-3">
-                    <span className="text-purple-500 text-lg">🎤</span>
-                    <div>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">[September 2026]</span>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Busy month! Gave a workshop talk at the <span className="font-semibold">ACM Tapia</span> conference and had a paper accepted to <span className="font-semibold">Interspeech</span>.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-3">
                     <span className="text-blue-500 text-lg">💼</span>
                     <div>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">[August 2026]</span>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[May 2026]</span>
                       <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Successfully completed my summer research internship at the <span className="font-semibold">Adobe Speech AI lab</span> in San Francisco, capping it off with a talk to the CAVA group!
+                        Joined <span className="font-semibold">Adobe Research</span> as a Research Scientist Intern, building multimodal tool-calling agents and audio language models for professional audio editing.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-3">
+                    <span className="text-green-500 text-lg">✅</span>
+                    <div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[2026]</span>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">
+                        New peer-reviewed work accepted at <span className="font-semibold">ACL, Interspeech, ASEE, CoLM, and IEEE SLT 2026</span>.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-3">
+                    <span className="text-purple-500 text-lg">🎓</span>
+                    <div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[May 2026]</span>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">
+                        Conferred an <span className="font-semibold">M.S. in Engineering Education</span> from the University of Florida.
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span className="text-purple-500 text-lg">🏆</span>
                     <div>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">[2025]</span>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">[December 2025]</span>
                       <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Received <span className="font-semibold">best paper award</span> at ASRU 2025 Workshop on Childspeech for "Can large audio language models understand child stuttering speech?"
+                        Won the <span className="font-semibold">Best Paper Award</span> at the IEEE ASRU 2025 Satellite Workshop for work on audio language models and child stuttering speech.
                       </p>
                     </div>
                   </div>
@@ -192,27 +192,7 @@ export default function Home() {
                     <div>
                       <span className="text-sm text-gray-500 dark:text-gray-400">[2026]</span>
                       <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        AfriVox paper accepted at <span className="font-semibold">EACL 2026</span>!
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <span className="text-orange-500 text-lg">🏖️</span>
-                    <div>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">[2025]</span>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Presenting poster <span className="font-semibold">"Can Large Audio Language Models Understand Child Stuttering Speech? Speech Summarization, and Source Separation"</span> at ASRU 2025 Satellite Workshop in Hawaii.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <span className="text-purple-500 text-lg">🎤</span>
-                    <div>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">[Sept 25]</span>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Excited to present my research at the <span className="font-semibold">TTIC Summer Workshop on Foundations of Speech and Audio Foundation Models</span> in Chicago.
+                        <span className="font-semibold">AfriVox</span> was accepted at EACL 2026, alongside AfriSpeech research featured at NAACL and ACL.
                       </p>
                     </div>
                   </div>
@@ -222,7 +202,7 @@ export default function Home() {
                     <div>
                       <span className="text-sm text-gray-500 dark:text-gray-400">[Jan 25]</span>
                       <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Excited to present our <span className="font-semibold">AfriSpeech-Dialog</span> work at NAACL 2025.
+                        Presented our <span className="font-semibold">AfriSpeech-Dialog</span> work at NAACL 2025.
                       </p>
                     </div>
                   </div>
@@ -282,10 +262,10 @@ export default function Home() {
               className="bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-800 p-6 rounded-2xl border-l-4 border-l-purple-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Afrispeech Semantics: Evaluating Audio–Semantic Reasoning in Spoken Language Models Across Domains and Accents
+                Afrispeech-Semantics: Evaluating Audio–Semantic Reasoning in Spoken Language Models
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-2">
-                <span className="font-medium">Presented in San Diego, July 2026</span> | <span className="font-semibold">Chibuzor Okocha</span>, et al.
+                <span className="font-medium">ACL 2026</span> | <span className="font-semibold">Chibuzor Okocha</span>, Christan Grant
               </p>
               <p className="text-gray-500 dark:text-gray-400 text-sm">
                 Evaluating audio-semantic reasoning capabilities of spoken language models across different domains and African accents.
@@ -369,7 +349,7 @@ export default function Home() {
                 Reasoning Beyond Transcription: Audio Language Models on Child Stuttering Speech
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-2">
-                <span className="font-medium">Interspeech 2026</span> | <span className="font-semibold">Chibuzor Okocha</span>, Christan Grant, Zoey Liu
+                <span className="font-medium">Interspeech 2026</span> | <span className="font-semibold">Chibuzor Okocha</span>, et al.
               </p>
               <p className="text-gray-500 dark:text-gray-400 text-sm mb-3">
                 A diagnostic benchmark evaluating Audio Language Models (ALMs) and ASR + LLM cascades on disfluent child speech.
@@ -377,9 +357,6 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 text-xs font-mono">
                 <a href="/reasoning-beyond-transcription" className="px-2.5 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-800 hover:bg-cyan-900 transition-colors">
                   Project Page &rarr;
-                </a>
-                <a href="https://arxiv.org/abs/2609.07968" target="_blank" rel="noopener noreferrer" className="px-2.5 py-1 rounded bg-red-950/80 text-red-300 border border-red-800/60 hover:bg-red-900 transition-colors">
-                  arXiv:2609.07968
                 </a>
                 <a href="https://github.com/ufdatastudio/child-speech-analysis" target="_blank" rel="noopener noreferrer" className="px-2.5 py-1 rounded bg-slate-800 text-slate-200 border border-slate-700 hover:bg-slate-700 transition-colors">
                   GitHub Repository
@@ -411,13 +388,13 @@ export default function Home() {
               className="bg-white dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-800 p-6 rounded-2xl border-l-4 border-l-indigo-500 hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Domain-Aware Speaker Diarization On African-Accented English
+                The Hidden Labor Market Titles of AI Engineering Education
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-2">
-                <span className="font-medium">arXiv preprint (Under Review)</span> | <span className="font-semibold">Chibuzor Okocha</span>, Kelechi Ezema, Christan Grant | <a href="https://www.arxiv.org/abs/2509.21554" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">arXiv</a>
+                <span className="font-medium">ASEE 2026</span> | <span className="font-semibold">Chibuzor Okocha</span>, Amanda N. Irving, Iván Villanueva Alarcón, Charles R. Taylor, Christan Grant
               </p>
               <p className="text-gray-500 dark:text-gray-400 text-sm">
-                Examining domain effects in speaker diarization for African-accented English across general and clinical dialogues.
+                Examining how labor-market titles and skills shape AI engineering education and the translation of research training into industry roles.
               </p>
             </motion.div>
           </div>
